@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Smart Village</string>
+    <string name="pembukaan">apa yang ingin kamu ketahui</string>
+    <string name="specialist_text">Tanyakan tentang desa ini kepada asisten kami</string>
 </resources>

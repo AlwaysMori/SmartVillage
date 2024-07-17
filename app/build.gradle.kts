@@ -33,6 +33,16 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+        buildConfig = true
+        dataBinding = true
+        mlModelBinding = true
+        compose = true
+    }
+    composeOptions {
+        kotlinCompilerExtensionVersion = "1.5.1"
+    }
 }
 
 dependencies {
@@ -45,4 +55,16 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
+    implementation ("androidx.databinding:databinding-runtime:8.4.1")
+    implementation("androidx.compose.ui:ui-tooling-preview")
+    debugImplementation("androidx.compose.ui:ui-tooling")
+    val composeBom = platform("androidx.compose:compose-bom:2024.02.02")
+    implementation("com.google.ai.client.generativeai:generativeai:0.2.2")
+
+    implementation(composeBom)
+    androidTestImplementation(composeBom)
+    implementation("androidx.compose.material3:material3")
+    implementation("com.github.Jithin-Jude:lib_gemini_chatbot:1.0.8")
 }
