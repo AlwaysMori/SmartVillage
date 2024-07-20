@@ -67,4 +67,7 @@ dependencies {
     androidTestImplementation(composeBom)
     implementation("androidx.compose.material3:material3")
     implementation("com.github.Jithin-Jude:lib_gemini_chatbot:1.0.8")
+
+    implementation ("androidx.viewpager2:viewpager2:1.0.0")
+
 }

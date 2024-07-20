@@ -53,7 +53,7 @@ import androidx.compose.ui.res.stringResource
 @Composable
 fun GeminiChatView(
     apiKey: String,
-    appThemColor: Color = Color.Green,
+    appThemeColor: Color = Color.Blue,
     chatContext: List<GeminiContent> = emptyList()
 ) {
     val lazyColumnListState = rememberLazyListState()
@@ -80,13 +80,13 @@ fun GeminiChatView(
     ) {
         Surface(
             modifier = Modifier.fillMaxWidth(),
-            color = appThemColor,
+            color = appThemeColor,
         ) {
             Row(
                 modifier = Modifier.padding(16.dp)
             ) {
                 Image(
-                    painter = painterResource(id = R.drawable.avatar),
+                    painter = painterResource(id = R.drawable.img),
                     contentDescription = "Profile Image",
                     modifier = Modifier
                         .size(55.dp)
@@ -102,7 +102,7 @@ fun GeminiChatView(
                         .align(Alignment.CenterVertically)
                 ) {
                     Text(
-                        text = "HICARE",
+                        text = "WISE",
                         color = Color.Black,
                         fontSize = 24.sp,
                     )
@@ -131,12 +131,11 @@ fun GeminiChatView(
                     ChatBubble(
                         text = chat.text,
                         memberType = chat.memberType,
-                        appThemeColor = appThemColor
+                        appThemeColor = appThemeColor
                     )
                 }
             }
         }
-
 
         RoundedCornerTextFieldWithSend(
             modifier = Modifier.fillMaxWidth(),
@@ -162,7 +161,7 @@ fun GeminiChatView(
                 }
             },
             isLoading.value,
-            appThemColor
+            appThemeColor
         )
     }
 }
@@ -174,15 +173,9 @@ fun ChatBubble(
     appThemeColor: Color
 ) {
     val bubbleColor = if (memberType == MemberType.USER) {
-        Color(0xFFB9F5D3)
+        Color(0xFF2196F3)
     } else {
         appThemeColor
-    }
-
-    val alignment = if (memberType == MemberType.USER) {
-        Alignment.End
-    } else {
-        Alignment.Start
     }
 
     Row(
@@ -194,7 +187,7 @@ fun ChatBubble(
     ) {
         if (memberType == MemberType.BOT) {
             Icon(
-                painter = painterResource(id = R.drawable.avatar),
+                painter = painterResource(id = R.drawable.img),
                 contentDescription = "Bot Avatar",
                 modifier = Modifier.size(40.dp),
                 tint = Color.Unspecified
@@ -202,46 +195,41 @@ fun ChatBubble(
             Spacer(modifier = Modifier.width(8.dp))
         }
 
-        Row(
-            verticalAlignment = Alignment.CenterVertically
+        Box(
+            modifier = Modifier
+                .background(
+                    color = bubbleColor,
+                    shape = RoundedCornerShape(12.dp)
+                )
+                .padding(12.dp)
         ) {
-            Box(
-                modifier = Modifier
-                    .background(
-                        color = bubbleColor,
-                        shape = RoundedCornerShape(12.dp)
-                    )
-                    .padding(12.dp)
-            ) {
-                Text(
-                    text = text,
-                    color = Color.Black,
-                    fontSize = 16.sp,
-                    modifier = Modifier.widthIn(max = 240.dp)
-                )
-            }
+            Text(
+                text = text,
+                color = Color.Black,
+                fontSize = 16.sp,
+                modifier = Modifier.widthIn(max = 240.dp)
+            )
+        }
 
-            if (memberType == MemberType.USER) {
-                Spacer(modifier = Modifier.width(8.dp))
-                Icon(
-                    painter = painterResource(id = R.drawable.avatar),
-                    contentDescription = "User Avatar",
-                    modifier = Modifier.size(40.dp),
-                    tint = Color.Unspecified
-                )
-                Spacer(modifier = Modifier.width(8.dp))
-            }
+        if (memberType == MemberType.USER) {
+            Spacer(modifier = Modifier.width(8.dp))
+            Icon(
+                painter = painterResource(id = R.drawable.profile),
+                contentDescription = "User Avatar",
+                modifier = Modifier.size(40.dp),
+                tint = Color.Unspecified
+            )
+            Spacer(modifier = Modifier.width(8.dp))
         }
     }
 }
-
 
 @Composable
 fun RoundedCornerTextFieldWithSend(
     modifier: Modifier = Modifier,
     onSendClick: (String) -> Unit,
     isLoading: Boolean,
-    appThemColor: Color
+    appThemeColor: Color
 ) {
     val focusRequester = remember { FocusRequester() }
     val textState = remember { mutableStateOf("") }
@@ -257,10 +245,10 @@ fun RoundedCornerTextFieldWithSend(
                 .focusRequester(focusRequester),
             shape = RoundedCornerShape(12.dp),
             colors = OutlinedTextFieldDefaults.colors(
-                focusedBorderColor = Color(0xFFB9F5D3),
+                focusedBorderColor = appThemeColor,
                 focusedLabelColor = Color.Black,
-                unfocusedBorderColor = Color.Green,
-                unfocusedLabelColor = Color.Green,
+                unfocusedBorderColor = appThemeColor,
+                unfocusedLabelColor = Color.Black,
                 cursorColor = Color.Black
             )
         )
@@ -269,7 +257,7 @@ fun RoundedCornerTextFieldWithSend(
             CircularProgressIndicator(
                 modifier = Modifier.size(36.dp),
                 strokeWidth = 4.dp,
-                color = Color.Green,
+                color = appThemeColor,
             )
         } else {
             Button(
@@ -282,7 +270,7 @@ fun RoundedCornerTextFieldWithSend(
                 },
                 shape = RoundedCornerShape(100.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = appThemColor
+                    containerColor = appThemeColor
                 )
             ) {
                 Icon(
