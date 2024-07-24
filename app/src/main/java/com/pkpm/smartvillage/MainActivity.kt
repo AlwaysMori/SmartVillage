@@ -7,17 +7,23 @@ import android.os.Looper
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import androidx.core.content.ContextCompat
 import androidx.viewpager2.widget.ViewPager2
+import com.github.mikephil.charting.charts.PieChart
+import com.github.mikephil.charting.data.PieData
+import com.github.mikephil.charting.data.PieDataSet
+import com.github.mikephil.charting.data.PieEntry
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
+    private lateinit var pieChart: PieChart
+    private lateinit var profesichart: PieChart
 
     private val slideInterval: Long = 3000
     private val handler = Handler(Looper.getMainLooper())
+
     private val runnable = object : Runnable {
         override fun run() {
             val currentItem = binding.bannerViewPager.currentItem
@@ -33,16 +39,80 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        setupEdgeToEdge()
+        setupPieChart()
+        setupViewPager()
+        setupClickListeners()
+        setupProfesichart()
+    }
+
+    private fun setupEdgeToEdge() {
         enableEdgeToEdge()
         window.statusBarColor = getColor(R.color.white)
         hideNavigationBar()
+    }
+    private fun setupProfesichart() {
+        profesichart = findViewById(R.id.profesichart)
 
+        // Sample data for profesichart
+        val pieEntries = listOf(
+            PieEntry(30f, "Petani"),
+            PieEntry(25f, "Pegawai"),
+            PieEntry(20f, "PNS"),
+            PieEntry(10f, "Lain")
+        )
+
+        val dataSet = PieDataSet(pieEntries, "").apply {
+            colors = listOf(
+                ContextCompat.getColor(this@MainActivity, R.color.green_light),
+                ContextCompat.getColor(this@MainActivity, R.color.blue),
+                ContextCompat.getColor(this@MainActivity, R.color.red),
+                ContextCompat.getColor(this@MainActivity, R.color.yellow),
+            )
+        }
+
+        profesichart.data = PieData(dataSet)
+
+        // Set properties for profesichart
+        profesichart.description.isEnabled = false
+        profesichart.legend.isEnabled = true
+        profesichart.setDrawEntryLabels(false)
+        profesichart.animateY(1000)
+    }
+    private fun setupPieChart() {
+        pieChart = findViewById(R.id.pieChart)
+
+        val pieEntries = listOf(
+            PieEntry(60f, "Pria"),
+            PieEntry(40f, "Wanita")
+        )
+
+        val dataSet = PieDataSet(pieEntries, "").apply {
+            colors = listOf(
+                ContextCompat.getColor(this@MainActivity, R.color.red),
+                ContextCompat.getColor(this@MainActivity, R.color.blue)
+            )
+        }
+
+        pieChart.data = PieData(dataSet)
+
+        // Set properties directly on the PieChart
+        pieChart.description.isEnabled = false
+        pieChart.legend.isEnabled = true
+        pieChart.setDrawEntryLabels(false)
+        pieChart.animateY(1000)
+    }
+
+
+    private fun setupViewPager() {
         val bannerImages = listOf(R.drawable.profil, R.drawable.avatar, R.drawable.img)
-
         adapter = BannerAdapter(bannerImages)
         binding.bannerViewPager.adapter = adapter
         handler.postDelayed(runnable, slideInterval)
+    }
 
+    private fun setupClickListeners() {
         binding.ai.setOnClickListener {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
