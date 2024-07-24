@@ -53,7 +53,7 @@ import androidx.compose.ui.res.stringResource
 @Composable
 fun GeminiChatView(
     apiKey: String,
-    appThemeColor: Color = Color.Blue,
+    appThemeColor: Color = Color(0xFFC0DDDF),
     chatContext: List<GeminiContent> = emptyList()
 ) {
     val lazyColumnListState = rememberLazyListState()
@@ -165,7 +165,6 @@ fun GeminiChatView(
         )
     }
 }
-
 @Composable
 fun ChatBubble(
     text: String,
@@ -173,9 +172,9 @@ fun ChatBubble(
     appThemeColor: Color
 ) {
     val bubbleColor = if (memberType == MemberType.USER) {
-        Color(0xFF2196F3)
+        appThemeColor // Use appThemeColor for user messages
     } else {
-        appThemeColor
+        appThemeColor // Use appThemeColor for bot messages
     }
 
     Row(
@@ -223,6 +222,7 @@ fun ChatBubble(
         }
     }
 }
+
 
 @Composable
 fun RoundedCornerTextFieldWithSend(

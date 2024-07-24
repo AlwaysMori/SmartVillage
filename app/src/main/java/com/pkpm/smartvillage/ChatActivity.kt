@@ -23,7 +23,7 @@ class ChatActivity : AppCompatActivity() {
         binding.composeView.setContent {
             GeminiChatView(
                 apiKey = "AIzaSyDQKICc9Ij_UMKa32lAJnv7SbEjY-8ihyI",
-                appThemeColor = colorResource(R.color.blue),
+                appThemeColor = colorResource(R.color.blue_light2),
                 chatContext = listOf(
                     GeminiContent(
                         role = "user",
