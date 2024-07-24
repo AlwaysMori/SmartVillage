@@ -6,8 +6,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white_transparent">#60FFFFFF</color>
     <color name="green_light">#8FD3A6</color>
-    <color name="blue">#44C7FF</color>
+    <color name="blue">#5271FD</color>
     <color name="black_overlay">#66000000</color>
     <color name="transparent">#00000000</color>
     <color name="green_light2">#8FD3A6</color>"
+    <color name="blue_light">#D7E3FC</color>"
+
+
 </resources>
