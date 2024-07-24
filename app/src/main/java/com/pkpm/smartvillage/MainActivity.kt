@@ -14,6 +14,7 @@ import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
+import com.pkpm.smartvillage.home.profil.ProfilActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -117,8 +118,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
-    }
 
+
+        binding.profil.setOnClickListener {
+            val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
+    }
     private fun hideNavigationBar() {
         window.decorView.systemUiVisibility = (
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY

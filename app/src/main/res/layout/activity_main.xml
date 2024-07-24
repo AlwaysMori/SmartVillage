@@ -100,6 +100,7 @@
                         android:padding="10dp">
 
                         <androidx.cardview.widget.CardView
+                            android:id="@+id/profil"
                             android:layout_width="70dp"
                             android:layout_height="70dp"
                             android:background="@color/white"
@@ -454,7 +455,19 @@
             </androidx.cardview.widget.CardView>
 
 
-
+            <TextView
+                android:id="@+id/textViewCopyright"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="10dp"
+                android:text="© PKPM IIB Darmajaya 2024. All rights reserved."
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
+
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
