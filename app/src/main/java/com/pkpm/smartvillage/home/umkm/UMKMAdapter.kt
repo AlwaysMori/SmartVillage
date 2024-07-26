@@ -44,24 +44,12 @@ class UMKMAdapter(private val umkmList: List<UMKM>) : RecyclerView.Adapter<UMKMA
             binding.textViewOwner.text = umkm.owner
             binding.textViewPrice.text = umkm.price
             binding.imageViewUmkm.setImageResource(umkm.imageResId)
-
             binding.buttonContact.setOnClickListener {
                 val whatsappUrl = umkm.link
-                if (!TextUtils.isEmpty(whatsappUrl)) {
-                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(whatsappUrl))
-                    val packageManager = itemView.context.packageManager
-                    val installedApps = packageManager.getInstalledApplications(PackageManager.GET_META_DATA)
-                    val isWhatsAppInstalled = installedApps.any { it.packageName.startsWith("com.whatsapp") }
-
-                    if (isWhatsAppInstalled) {
-                        itemView.context.startActivity(intent)
-                    } else {
-                        Toast.makeText(itemView.context, "WhatsApp tidak terpasang di perangkat ini", Toast.LENGTH_SHORT).show()
-                    }
-                } else {
-                    Toast.makeText(itemView.context, "URL tidak valid", Toast.LENGTH_SHORT).show()
-                }
+                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(whatsappUrl))
+                itemView.context.startActivity(intent)
             }
+            binding.root.setOnClickListener(null)
         }
     }
 }

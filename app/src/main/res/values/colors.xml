@@ -16,6 +16,9 @@
     <color name="yellow">#FFEB3B</color>"
     <color name="orange">#FF9800</color>"
 
-
+    <color name="button_background_dark">#004D40</color> <!-- Teal Gelap -->
+    <color name="button_background_grey">#E0E0E0</color> <!-- Abu-abu Terang -->
+    <color name="button_background_yellow">#F7E5B4</color> <!-- Kuning Muda -->
+    <color name="button_background_navy">#003366</color> <!-- Biru Navy -->
 
 </resources>

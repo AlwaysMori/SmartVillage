@@ -17,27 +17,36 @@
         app:boxCornerRadiusTopEnd="16dp"
         app:boxCornerRadiusTopStart="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="16dp"
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:endIconDrawable="@drawable/baseline_search_24"
         app:endIconMode="custom"
+        android:textColorHint="@color/black"
+        app:cursorColor="@color/black"
         app:boxBackgroundColor="@color/blue_light2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:hintTextColor="@color/black"
+        app:boxStrokeColor="@color/black"
+        app:passwordToggleTint="@color/black">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/edSearch"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Cari Umkm" />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cursorColor="@color/black"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textColorHighlight="@color/black"
+        android:hint="Cari di sini" />
 
-    </com.google.android.material.textfield.TextInputLayout>
+</com.google.android.material.textfield.TextInputLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+
+<androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"

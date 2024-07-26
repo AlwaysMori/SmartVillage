@@ -23,11 +23,13 @@
             android:id="@+id/imageViewUmkm"
             android:layout_width="53dp"
             android:layout_height="51dp"
-            android:src="@drawable/umkm" />
+            android:src="@drawable/umkm"
+            android:clickable="false"
+            android:focusable="false"/>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="125dp"
+            android:layout_height="match_parent"
             android:layout_marginStart="16dp"
             android:orientation="vertical">
 
@@ -60,12 +62,14 @@
                 android:id="@+id/buttonContact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/button_background_navy"
+                android:clickable="true"
+                android:focusable="true"
                 android:gravity="center"
                 android:text="Hubungi"
-                android:textStyle="bold"
                 android:textColor="@android:color/white"
-                android:background="@color/transparent"
-                android:layout_marginTop="8dp"/>
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
