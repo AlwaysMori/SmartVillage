@@ -24,15 +24,15 @@ class UmkmActivity : AppCompatActivity() {
 
         umkmList = listOf(
             UMKM("UMKM 1", "Pemilik 1", "Harga 1", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 2", "Pemilik 2", "Harga 2", R.drawable.umkm, "https://wa.me/6283170334470"),
+            UMKM("UMKM 2", "Pemilik 2", "Harga 2", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 3", "Pemilik 3", "Harga 3", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 4", "Pemilik 4", "Harga 4", R.drawable.umkm, "https://wa.me/6283170334470"),
+            UMKM("UMKM 4", "Pemilik 4", "Harga 4", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 5", "Pemilik 5", "Harga 5", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 6", "Pemilik 6", "Harga 6", R.drawable.umkm, "https://wa.me/6283170334470"),
+            UMKM("UMKM 6", "Pemilik 6", "Harga 6", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("Kerupuk", "Pemilik 7", "Harga 7", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 8", "Pemilik 8", "Harga 8", R.drawable.umkm, "https://wa.me/6283170334470"),
+            UMKM("UMKM 8", "Pemilik 8", "Harga 8", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 9", "Pemilik 9", "Harga 9", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 10", "Pemilik 10", "Harga 10", R.drawable.umkm, "https://wa.me/6283170334470")
+            UMKM("UMKM 10", "Pemilik 10", "Harga 10", R.drawable.umkm, "https://wa.me/6285809781024")
         )
 
         adapter = UMKMAdapter(umkmList)
