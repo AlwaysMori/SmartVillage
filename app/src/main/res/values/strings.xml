@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Smart Village</string>
+    <string name="app_name">ISKA</string>
     <string name="pembukaan">apa yang ingin kamu ketahui</string>
     <string name="specialist_text">Tanyakan tentang desa ini kepada asisten kami</string>
     <string name="sejarah_desa">Desa Sungai Langka awalnya adalah areal perkebunan asing (Belanda) yang dibumihanguskan oleh tentara Jepang pada tahun 1945. Setelah itu, tanah bekas perkebunan dikelola kembali oleh Bapak Sabichun hingga tahun 1950. Pada tahun yang sama, Bapak Residen Lampung, Mr. Gele Harun, menempatkan Kompi C Coeps Tjandangan Nasional (CTN) dari Jawa Timur di areal tersebut, yang dipimpin oleh Bapak Lettu Suprapto.
@@ -8,4 +8,5 @@
 \n \nDesa Sungai Langka memiliki delapan wilayah pedusunan. Pada 2 Agustus 1976, jabatan Kepala Kampung Susukan diganti oleh Bapak S. Hadi Utomo, yang menjabat hingga tahun 1980.
 
     </string>
+    <string name="kerupuk">Kerupuk</string>
 </resources>

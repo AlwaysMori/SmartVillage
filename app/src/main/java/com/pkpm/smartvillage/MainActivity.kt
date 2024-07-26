@@ -14,7 +14,9 @@ import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
+import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
+import com.pkpm.smartvillage.home.umkm.UmkmActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -122,6 +124,16 @@ class MainActivity : AppCompatActivity() {
 
         binding.profil.setOnClickListener {
             val intent = Intent(this, ProfilActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.about.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.umkm.setOnClickListener {
+            val intent = Intent(this, UmkmActivity::class.java)
             startActivity(intent)
         }
     }

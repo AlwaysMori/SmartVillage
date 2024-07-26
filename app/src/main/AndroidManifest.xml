@@ -15,6 +15,12 @@
         android:theme="@style/Theme.SmartVillage"
         tools:targetApi="31">
         <activity
+            android:name=".home.umkm.UmkmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".home.about.AboutActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.profil.ProfilActivity"
             android:exported="false" />
         <activity
