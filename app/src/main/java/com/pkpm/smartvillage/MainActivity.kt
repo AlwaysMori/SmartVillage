@@ -1,5 +1,6 @@
 package com.pkpm.smartvillage
 
+
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
@@ -18,8 +19,9 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
-import com.pkpm.smartvillage.home.struktur.StrukturActivity
 import com.pkpm.smartvillage.home.umkm.UmkmActivity
+import com.pkpm.smartvillage.home.struktur.StrukturActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -55,13 +57,12 @@ class MainActivity : AppCompatActivity() {
 
     private fun setupEdgeToEdge() {
         enableEdgeToEdge()
-        window.statusBarColor = getColor(R.color.white)
+        window.statusBarColor = getColor(R.color.blue_light2)
         hideNavigationBar()
     }
     private fun setupProfesichart() {
         profesichart = findViewById(R.id.profesichart)
 
-        // Sample data for profesichart
         val pieEntries = listOf(
             PieEntry(30f, "Petani"),
             PieEntry(25f, "Pegawai"),
