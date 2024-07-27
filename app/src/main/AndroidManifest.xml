@@ -14,6 +14,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SmartVillage"
         tools:targetApi="31">
+
+        <activity
+            android:name=".home.struktur.StrukturActivity"
+            android:exported="false" />
         <activity
             android:name=".home.umkm.UmkmActivity"
             android:exported="false" />

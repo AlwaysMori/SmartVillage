@@ -13,9 +13,12 @@ import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
+import com.google.android.material.tabs.TabLayout
+import com.google.android.material.tabs.TabLayoutMediator
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
+import com.pkpm.smartvillage.home.struktur.StrukturActivity
 import com.pkpm.smartvillage.home.umkm.UmkmActivity
 
 class MainActivity : AppCompatActivity() {
@@ -136,6 +139,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, UmkmActivity::class.java)
             startActivity(intent)
         }
+        binding.struktur.setOnClickListener {
+            val intent = Intent(this, StrukturActivity::class.java)
+            startActivity(intent)
+        }
+
     }
     private fun hideNavigationBar() {
         window.decorView.systemUiVisibility = (
