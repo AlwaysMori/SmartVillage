@@ -20,8 +20,8 @@ import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.kegiatan.KegiatanActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
-import com.pkpm.smartvillage.home.umkm.UmkmActivity
 import com.pkpm.smartvillage.home.struktur.StrukturActivity
+import com.pkpm.smartvillage.home.umkm.UmkmActivity
 
 
 class MainActivity : AppCompatActivity() {
