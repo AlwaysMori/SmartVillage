@@ -266,7 +266,7 @@
                         android:padding="10dp">
 
                         <androidx.cardview.widget.CardView
-                            android:id="@+id/tes"
+                            android:id="@+id/kegiatan"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
                             app:cardCornerRadius="35dp"

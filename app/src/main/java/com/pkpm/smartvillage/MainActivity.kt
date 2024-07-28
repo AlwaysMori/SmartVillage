@@ -18,6 +18,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
+import com.pkpm.smartvillage.home.kegiatan.KegiatanActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
 import com.pkpm.smartvillage.home.umkm.UmkmActivity
 import com.pkpm.smartvillage.home.struktur.StrukturActivity
@@ -142,6 +143,10 @@ class MainActivity : AppCompatActivity() {
         }
         binding.struktur.setOnClickListener {
             val intent = Intent(this, StrukturActivity::class.java)
+            startActivity(intent)
+        }
+        binding.kegiatan.setOnClickListener {
+            val intent = Intent(this, KegiatanActivity::class.java)
             startActivity(intent)
         }
 
