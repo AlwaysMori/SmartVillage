@@ -46,7 +46,6 @@ class UmkmActivity : AppCompatActivity() {
             }
 
             override fun afterTextChanged(s: Editable?) {
-                // No action needed
             }
         })
         setupEdgeToEdge()
@@ -54,8 +53,6 @@ class UmkmActivity : AppCompatActivity() {
     }
     private fun setupEdgeToEdge() {
         enableEdgeToEdge()
-        window.statusBarColor = getColor(R.color.white)
-        hideNavigationBar()
     }
     private fun hideNavigationBar() {
         window.decorView.systemUiVisibility = (

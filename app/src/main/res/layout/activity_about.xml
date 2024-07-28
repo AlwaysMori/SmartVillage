@@ -2,13 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#C0DDDF"
     android:fitsSystemWindows="true"
     android:fillViewport="true"
-    android:backgroundTint="@color/white"
     tools:context=".home.about.AboutActivity">
 
     <LinearLayout
@@ -27,7 +25,7 @@
             android:id="@+id/team_card"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="20dp"
             app:cardCornerRadius="8dp"
             app:cardElevation="4dp">
 
@@ -54,7 +52,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_light"
                         android:text="TIM PKPM"
                         android:textColor="@color/black"
                         android:textSize="18sp"
@@ -70,7 +68,7 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/about_card"
+            android:id="@+id/tentang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
@@ -100,7 +98,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="@font/poppins_semibold"
+                        android:fontFamily="@font/poppins_light"
                         android:text="Tentang"
                         android:textColor="@color/black"
                         android:textSize="18sp"

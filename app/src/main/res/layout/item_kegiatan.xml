@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="16dp"
-        android:background="#68B3AF">
+        android:background="@color/blue_light2">
 
         <ImageView
             android:id="@+id/fotoKegiatan"
@@ -51,7 +51,7 @@
             android:text="Date"
             android:textColor="#000000"
             android:fontFamily="@font/poppins_light"
-            android:textSize="12sp"
+            android:textSize="8sp"
             app:layout_constraintTop_toTopOf="@id/judulKegiatan"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="@id/judulKegiatan" />
@@ -61,7 +61,6 @@
             android:id="@+id/cardView"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
             app:cardCornerRadius="10dp"
             app:layout_constraintBottom_toBottomOf="parent"

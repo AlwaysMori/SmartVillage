@@ -10,6 +10,8 @@ import com.pkpm.smartvillage.R
 
 class KegiatanAdapter(private val kegiatanList: List<Kegiatan>) : RecyclerView.Adapter<KegiatanAdapter.KegiatanViewHolder>() {
 
+    private val kegiatanListFiltered: MutableList<Kegiatan> = kegiatanList.toMutableList()
+
     class KegiatanViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val fotoKegiatan: ImageView = itemView.findViewById(R.id.fotoKegiatan)
         val judulKegiatan: TextView = itemView.findViewById(R.id.judulKegiatan)
@@ -23,12 +25,24 @@ class KegiatanAdapter(private val kegiatanList: List<Kegiatan>) : RecyclerView.A
     }
 
     override fun onBindViewHolder(holder: KegiatanViewHolder, position: Int) {
-        val currentItem = kegiatanList[position]
+        val currentItem = kegiatanListFiltered[position]
         holder.fotoKegiatan.setImageResource(currentItem.foto)
         holder.judulKegiatan.text = currentItem.judul
         holder.date.text = currentItem.tanggal
         holder.captionKegiatan.text = currentItem.caption
     }
 
-    override fun getItemCount() = kegiatanList.size
+    fun filter(query: String) {
+        kegiatanListFiltered.clear()
+        if (query.isEmpty()) {
+            kegiatanListFiltered.addAll(kegiatanList)
+        } else {
+            kegiatanListFiltered.addAll(
+                kegiatanList.filter { it.judul.contains(query, ignoreCase = true) }
+            )
+        }
+        notifyDataSetChanged()
+    }
+
+    override fun getItemCount() = kegiatanListFiltered.size
 }

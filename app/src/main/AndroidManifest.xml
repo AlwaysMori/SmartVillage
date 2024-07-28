@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SmartVillage"
         tools:targetApi="31">
         <activity
+            android:name=".home.about.TentangActivity"
+            android:exported="false" />
+        <activity
             android:name=".home.kegiatan.KegiatanActivity"
             android:exported="false" />
         <activity
