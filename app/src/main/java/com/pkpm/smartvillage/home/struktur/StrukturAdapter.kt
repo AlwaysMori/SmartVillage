@@ -11,7 +11,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.pkpm.smartvillage.R
 
-class StrukturAdapter(private val itemList: List<Struktur>, private val showDusun: Boolean) : RecyclerView.Adapter<StrukturAdapter.MyViewHolder>() {
+class StrukturAdapter(private val itemList: List<Struktur>, private val showDusun: Boolean, private val showBagian: Boolean) : RecyclerView.Adapter<StrukturAdapter.MyViewHolder>() {
 
     private var filteredList: List<Struktur> = itemList
 
@@ -21,6 +21,7 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
         val masaJabatanTextView: TextView = itemView.findViewById(R.id.masaJabatanTextView)
         val dusunTextView: TextView = itemView.findViewById(R.id.dusun)
         val hubungiButton: Button = itemView.findViewById(R.id.hubungiButton)
+        val bagian: TextView = itemView.findViewById((R.id.bagian))
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -41,12 +42,20 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
             holder.dusunTextView.visibility = View.GONE
         }
 
+        if (showBagian) {
+            holder.bagian.visibility = View.VISIBLE
+            holder.bagian.text = "Bagian : ${item.bagian}"
+        } else {
+            holder.bagian.visibility = View.GONE
+        }
+
         holder.hubungiButton.setOnClickListener {
             val uri = Uri.parse("https://wa.me/${item.nomorWa}")
             val intent = Intent(Intent.ACTION_VIEW, uri)
             it.context.startActivity(intent)
         }
     }
+
 
     override fun getItemCount() = filteredList.size
 

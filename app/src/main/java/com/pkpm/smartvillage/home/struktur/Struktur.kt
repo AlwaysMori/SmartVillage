@@ -5,4 +5,6 @@ data class Struktur(
     val masaJabatan: String,
     val gambar: Int,
     val nomorWa: String,
-    val dusun: String? = null    )
+    val dusun: String? = null,
+    val bagian: String? = null
+)

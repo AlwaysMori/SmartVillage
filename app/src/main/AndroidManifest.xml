@@ -15,6 +15,9 @@
         android:theme="@style/Theme.SmartVillage"
         tools:targetApi="31">
         <activity
+            android:name=".home.about.TeamActivity"
+            android:exported="false" />
+        <activity
             android:name=".tes.TesActivity"
             android:exported="false" />
         <activity

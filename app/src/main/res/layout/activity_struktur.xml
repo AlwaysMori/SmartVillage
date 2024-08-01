@@ -92,6 +92,23 @@
                 android:nestedScrollingEnabled="false" />
 
             <TextView
+                android:id="@+id/Kasi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kepala Seksi"
+                android:fontFamily="@font/poppins_semibold"
+                android:layout_marginStart="20dp"
+                android:padding="8dp"
+                android:textSize="20sp"
+                android:textColor="@color/black" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/kasiRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+            <TextView
                 android:id="@+id/kadusTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

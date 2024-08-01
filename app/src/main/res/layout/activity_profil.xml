@@ -95,7 +95,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="16sp"
                         android:layout_marginBottom="4dp"
-                        android:text="Sejarah"
+                        android:text="Batas Wilayah"
                         android:textStyle="bold"
                         android:textColor="@color/black" />
 

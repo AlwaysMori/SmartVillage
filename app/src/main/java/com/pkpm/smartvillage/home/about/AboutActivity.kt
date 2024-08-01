@@ -23,5 +23,10 @@ class AboutActivity : AppCompatActivity() {
             val intent = Intent(this, TentangActivity::class.java)
             startActivity(intent)
         }
+        binding.team.setOnClickListener {
+            val intent = Intent(this, TeamActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }

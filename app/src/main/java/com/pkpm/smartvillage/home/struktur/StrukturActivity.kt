@@ -14,9 +14,11 @@ class StrukturActivity : AppCompatActivity() {
 
     private lateinit var kadesAdapter: StrukturAdapter
     private lateinit var sekdesAdapter: StrukturAdapter
+    private lateinit var kasiAdapter: StrukturAdapter
     private lateinit var kadusAdapter: StrukturAdapter
 
     private val kadesList = mutableListOf<Struktur>()
+    private val kasiList = mutableListOf<Struktur>()
     private val sekdesList = mutableListOf<Struktur>()
     private val kadusList = mutableListOf<Struktur>()
 
@@ -25,46 +27,55 @@ class StrukturActivity : AppCompatActivity() {
         binding = ActivityStrukturBinding.inflate(layoutInflater)
         setContentView(binding.root)
         enableEdgeToEdge()
+
         kadesList.apply {
-            add(Struktur("Nama", "Jabatan", R.drawable.avatar, "628123456789"))
+            add(Struktur("Erwan Sukijo.SP", "Jabatan", R.drawable.avatar, "628123456789"))
         }
 
         sekdesList.apply {
-            add(Struktur("Nama", "Jabatan", R.drawable.avatar, "628123456789"))
+            add(Struktur("Junaedi Abdullah", "Jabatan", R.drawable.avatar, "628123456789"))
+        }
+
+        kasiList.apply {
+            add(Struktur("Rois Adi Irawan, S.Pd", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Pemerintahan"))
+            add(Struktur("Soleman, ST", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Kesejahteraan"))
+            add(Struktur("Erfangi", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Pelayanan"))
         }
 
         kadusList.apply {
-
-            add(Struktur("ahmad ", "Jabatan", R.drawable.avatar, "628987654321", "I"))
-            add(Struktur("jono ", "Jabatan", R.drawable.avatar, "628987654321", "II"))
-            add(Struktur("bima ", "Jabatan", R.drawable.avatar, "628987654321", "III"))
-            add(Struktur("sion ", "Jabatan", R.drawable.avatar, "628987654321", "IV"))
-            add(Struktur("lala ", "Jabatan", R.drawable.avatar, "628987654321", "V"))
-            add(Struktur("nanda ", "Jabatan", R.drawable.avatar, "628987654321", "VI"))
-            add(Struktur("soni ", "Jabatan", R.drawable.avatar, "628987654321", "VII"))
-            add(Struktur("bian ", "Jabatan", R.drawable.avatar, "628987654321", "VIII"))
-            add(Struktur("roni ", "Jabatan", R.drawable.avatar, "628987654321", "IX"))
-            add(Struktur("Iwan ", "Jabatan", R.drawable.avatar, "628987654321", "X"))
-
+            add(Struktur("Sukarjo", "Jabatan", R.drawable.avatar, "628987654321", "I"))
+            add(Struktur("Prastio Handoko", "Jabatan", R.drawable.avatar, "628987654321", "II"))
+            add(Struktur("Alvi Robi Taroreh", "Jabatan", R.drawable.avatar, "628987654321", "III"))
+            add(Struktur("Suwardi", "Jabatan", R.drawable.avatar, "628987654321", "IV"))
+            add(Struktur("Bibit Suyanto", "Jabatan", R.drawable.avatar, "628987654321", "V"))
+            add(Struktur("Budi Antriono", "Jabatan", R.drawable.avatar, "628987654321", "VI"))
+            add(Struktur("Sukardi", "Jabatan", R.drawable.avatar, "628987654321", "VII"))
+            add(Struktur("Priyo Sutoto", "Jabatan", R.drawable.avatar, "628987654321", "VIII"))
+            add(Struktur("Sumariyanto", "Jabatan", R.drawable.avatar, "628987654321", "IX"))
+            add(Struktur("Marsudi", "Jabatan", R.drawable.avatar, "628987654321", "X"))
         }
 
         binding.kadesRecyclerView.layoutManager = LinearLayoutManager(this)
+        binding.kasiRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.sekdesRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.kadusRecyclerView.layoutManager = LinearLayoutManager(this)
 
-        kadesAdapter = StrukturAdapter(kadesList, false)
-        sekdesAdapter = StrukturAdapter(sekdesList, false)
-        kadusAdapter = StrukturAdapter(kadusList, true)
+        kadesAdapter = StrukturAdapter(kadesList, false, false)
+        sekdesAdapter = StrukturAdapter(sekdesList, false, false)
+        kasiAdapter = StrukturAdapter(kasiList, false, true)
+        kadusAdapter = StrukturAdapter(kadusList, true, false)
 
         binding.kadesRecyclerView.adapter = kadesAdapter
         binding.sekdesRecyclerView.adapter = sekdesAdapter
         binding.kadusRecyclerView.adapter = kadusAdapter
+        binding.kasiRecyclerView.adapter = kasiAdapter
 
         binding.edSearch.addTextChangedListener { text ->
             val query = text.toString()
             kadesAdapter.filter(query)
             sekdesAdapter.filter(query)
             kadusAdapter.filter(query)
+            kasiAdapter.filter(query)
         }
     }
 }
