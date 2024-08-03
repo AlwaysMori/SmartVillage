@@ -5,7 +5,10 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -19,6 +22,7 @@ import com.google.android.material.tabs.TabLayoutMediator
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.kegiatan.KegiatanActivity
+import com.pkpm.smartvillage.home.kwt.TaniActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
 import com.pkpm.smartvillage.home.struktur.StrukturActivity
 import com.pkpm.smartvillage.home.umkm.UmkmActivity
@@ -149,6 +153,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, KegiatanActivity::class.java)
             startActivity(intent)
         }
+        binding.tani.setOnClickListener {
+            val intent = Intent(this, TaniActivity::class.java)
+            startActivity(intent)
+        }
 
     }
     private fun hideNavigationBar() {
@@ -157,14 +165,12 @@ class MainActivity : AppCompatActivity() {
                         or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
                 )
     }
-
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) {
             hideNavigationBar()
         }
     }
-
     override fun onDestroy() {
         super.onDestroy()
         handler.removeCallbacks(runnable)

@@ -1,0 +1,57 @@
+package com.pkpm.smartvillage.home.kwt
+
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import com.pkpm.smartvillage.R
+import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.pkpm.smartvillage.databinding.ActivityMainBinding
+import com.pkpm.smartvillage.databinding.ActivityTaniBinding
+
+class TaniActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityTaniBinding
+    private lateinit var adapter: KWTAdapter
+    private lateinit var items: List<KWTItem>
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        binding = ActivityTaniBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        enableEdgeToEdge()
+
+        val items = listOf(
+            KWTItem("Dusun I", R.drawable.avatar, "Ketua 1", "Tanaman 1", "Lokasi 1", "Kontak 1", "Deskripsi 1","628123456789"),
+            KWTItem("Dusun II", R.drawable.avatar, "Ketua 2", "Tanaman 2", "Lokasi 2", "Kontak 2", "Deskripsi 2","628123456789"),
+            KWTItem("Dusun III", R.drawable.avatar, "Ketua 3", "Tanaman 3", "Lokasi 3", "Kontak 3", "Deskripsi 3","628123456789"),
+            KWTItem("Dusun IV", R.drawable.avatar, "Ketua 4", "Tanaman 4", "Lokasi 4", "Kontak 4", "Deskripsi 4","628123456789"),
+            KWTItem("Dusun V", R.drawable.avatar, "Ketua 5", "Tanaman 5", "Lokasi 5", "Kontak 5", "Deskripsi 5","628123456789"),
+            KWTItem("Dusun VI", R.drawable.avatar, "Ketua 6", "Tanaman 6", "Lokasi 6", "Kontak 6", "Deskripsi 6","628123456789"),
+            KWTItem("Dusun VII", R.drawable.avatar, "Ketua 7", "Tanaman 7", "Lokasi 7", "Kontak 7", "Deskripsi 7","628123456789"),
+            KWTItem("Dusun VIII", R.drawable.avatar, "Ketua 8", "Tanaman 8", "Lokasi 8", "Kontak 8", "Deskripsi 8","628123456789"),
+            KWTItem("Dusun IX", R.drawable.avatar, "Ketua 9", "Tanaman 9", "Lokasi 9", "Kontak 9", "Deskripsi 9","628123456789"),
+            KWTItem("Dusun X", R.drawable.avatar, "Ketua 10", "Tanaman 10", "Lokasi 10", "Kontak 10", "Deskripsi 10","628123456789")
+        )
+
+        adapter = KWTAdapter(items)
+        binding.recyclerView.layoutManager = LinearLayoutManager(this)
+        binding.recyclerView.adapter = adapter
+
+        binding.edSearch.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                adapter.filter.filter(s)
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
+
+
+    }
+
+}

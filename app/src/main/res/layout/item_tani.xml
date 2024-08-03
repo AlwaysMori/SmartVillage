@@ -1,0 +1,140 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="25dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/blue_light"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/blue_light2">
+
+        <!-- Village Name -->
+        <TextView
+            android:id="@+id/dusun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:textSize="24sp"
+            android:text="Dusun "
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- KWT Photo -->
+        <ImageView
+            android:id="@+id/fotokwt"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:background="#FFFFFF"
+            android:contentDescription="Foto KWT"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dusun"
+            tools:srcCompat="@tools:sample/avatars" />
+
+        <!-- KWT Information Card -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/fotokwt">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Group Leader's Name -->
+                <TextView
+                    android:id="@+id/namaketua"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navy"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="8dp"
+                    android:text="Nama Ketua : "
+                    android:textColor="@color/black" />
+
+                <!-- Plant Types -->
+                <TextView
+                    android:id="@+id/namatumbuhan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navy"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="8dp"
+                    android:text="Tanaman : "
+                    android:textColor="@color/black" />
+
+                <!-- Location -->
+                <TextView
+                    android:id="@+id/lokasi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navy"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="8dp"
+                    android:text="Lokasi : "
+                    android:textColor="@color/black" />
+
+                <!-- Contact Information -->
+                <TextView
+                    android:id="@+id/kontak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navy"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="8dp"
+                    android:text="Kontak : "
+                    android:textColor="@color/black" />
+
+                <!-- Description -->
+                <TextView
+                    android:id="@+id/deskripsi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/navy"
+                    android:fontFamily="@font/poppins_light"
+                    android:padding="8dp"
+                    android:text="Deskripsi : "
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Contact Button -->
+        <Button
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/navy"
+            android:clickable="true"
+            android:focusable="true"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Hubungi"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
