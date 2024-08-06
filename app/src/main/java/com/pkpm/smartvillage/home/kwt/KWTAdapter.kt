@@ -24,11 +24,11 @@ class KWTAdapter(private val items: List<KWTItem>) : RecyclerView.Adapter<KWTAda
         val item = filteredItems[position]
         holder.binding.dusun.text = item.dusun
         holder.binding.fotokwt.setImageResource(item.fotoKWT)
-        holder.binding.namaketua.text = "Nama Ketua: ${item.namaKetua}"
-        holder.binding.namatumbuhan.text = "Tanaman: ${item.namaTumbuhan}"
-        holder.binding.lokasi.text = "Lokasi: ${item.lokasi}"
-        holder.binding.kontak.text = "Kontak: ${item.kontak}"
-        holder.binding.deskripsi.text = "Deskripsi: ${item.deskripsi}"
+        holder.binding.namaketua.text = "Ketua : ${item.namaKetua}"
+        holder.binding.namatumbuhan.text = "Tanaman : ${item.namaTumbuhan}"
+        holder.binding.lokasi.text = "Nama KWT : ${item.lokasi}"
+        holder.binding.kontak.text = "Google Maps : ${item.kontak}"
+        holder.binding.deskripsi.text = "Deskripsi : ${item.deskripsi}"
 
         holder.binding.contact.setOnClickListener {
             val uri = Uri.parse("https://wa.me/${item.contact}")

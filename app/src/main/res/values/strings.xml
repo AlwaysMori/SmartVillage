@@ -9,4 +9,13 @@
 
     </string>
     <string name="kerupuk">Kerupuk</string>
+    <string name="batas">
+    Secara administrasi, Desa Sungai Langka merupakan bagian dari wilayah Kecamatan Gedong Tataan dengan luas wilayah sebesar 900 hektar. Desa Sungai Langka adalah daerah perbukitan dengan ketinggian 100–400 meter di atas permukaan laut dan suhu berkisar antara 15°C hingga 30°C. Adapun batas-batas wilayah Desa Sungai Langka adalah sebagai berikut: \n
+        \nSebelah Utara: berbatasan dengan Desa Bernung dan Desa Negeri Sakti Kecamatan Gedong Tataan \n
+        \nSebelah Selatan: berbatasan dengan Desa Kurungan Nyawa \n
+        \nSebelah Timur: berbatasan dengan hutan Kawasan Register 19 Gunung Betung \n
+        \nSebelah Barat: berbatasan dengan Desa Wiyono dan PTPN Way Berulu \n
+        \nSumber: Badan Informasi Geospasial (diolah menggunakan ArcGIS), 2020\n \n
+</string>
+
 </resources>

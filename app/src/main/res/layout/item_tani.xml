@@ -34,7 +34,7 @@
             android:id="@+id/fotokwt"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:background="#FFFFFF"
+            android:background="@color/transparent"
             android:contentDescription="Foto KWT"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
                     android:background="@color/navy"
                     android:fontFamily="@font/poppins_light"
                     android:padding="8dp"
-                    android:text="Lokasi : "
+                    android:text="Nama KWT : "
                     android:textColor="@color/black" />
 
                 <!-- Contact Information -->

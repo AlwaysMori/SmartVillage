@@ -41,6 +41,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.focus.FocusRequester
 import androidx.compose.ui.focus.focusRequester
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.LocalSoftwareKeyboardController
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.google.ai.client.generativeai.GenerativeModel
@@ -233,6 +234,7 @@ fun RoundedCornerTextFieldWithSend(
 ) {
     val focusRequester = remember { FocusRequester() }
     val textState = remember { mutableStateOf("") }
+    val keyboardController = LocalSoftwareKeyboardController.current
 
     Row(modifier = modifier.padding(16.dp), verticalAlignment = Alignment.CenterVertically) {
         OutlinedTextField(
@@ -267,6 +269,7 @@ fun RoundedCornerTextFieldWithSend(
                 onClick = {
                     onSendClick(textState.value)
                     textState.value = ""
+                    keyboardController?.hide() // Hide the keyboard
                 },
                 shape = RoundedCornerShape(100.dp),
                 colors = ButtonDefaults.buttonColors(
@@ -281,9 +284,8 @@ fun RoundedCornerTextFieldWithSend(
             }
         }
     }
-    LaunchedEffect(focusRequester) {
-        focusRequester.requestFocus()
-    }
+
+
 }
 
 data class GeminiContent(var role: String, var text: String)

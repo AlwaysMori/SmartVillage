@@ -23,9 +23,9 @@ class UmkmActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
         umkmList = listOf(
-            UMKM("UMKM 1", "Pemilik 1", "Harga 1", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 2", "Pemilik 2", "Harga 2", R.drawable.umkm, "https://wa.me/6285809781024"),
-            UMKM("UMKM 3", "Pemilik 3", "Harga 3", R.drawable.umkm, "https://wa.me/6285809781024"),
+            UMKM("Bubuk Cabai", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.cabe, "https://wa.me/62895621754776"),
+            UMKM("Rengginang", "Tuti Puji Astuti", "Rp. 35.000,00", R.drawable.rengginang, "https://wa.me/62895621754776"),
+            UMKM("Coksula", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.coksula, "https://wa.me/62895621754776"),
             UMKM("UMKM 4", "Pemilik 4", "Harga 4", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 5", "Pemilik 5", "Harga 5", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 6", "Pemilik 6", "Harga 6", R.drawable.umkm, "https://wa.me/6285809781024"),

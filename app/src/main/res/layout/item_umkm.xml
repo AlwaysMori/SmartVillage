@@ -21,8 +21,8 @@
 
         <ImageView
             android:id="@+id/imageViewUmkm"
-            android:layout_width="53dp"
-            android:layout_height="51dp"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
             android:src="@drawable/umkm"
             android:clickable="false"
             android:focusable="false"/>

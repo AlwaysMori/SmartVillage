@@ -21,6 +21,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
+import com.pkpm.smartvillage.home.galeri.GaleriActivity
 import com.pkpm.smartvillage.home.kegiatan.KegiatanActivity
 import com.pkpm.smartvillage.home.kwt.TaniActivity
 import com.pkpm.smartvillage.home.profil.ProfilActivity
@@ -157,7 +158,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, TaniActivity::class.java)
             startActivity(intent)
         }
-
+        binding.galeri.setOnClickListener {
+            val intent = Intent(this, GaleriActivity::class.java)
+            startActivity(intent)
+        }
     }
     private fun hideNavigationBar() {
         window.decorView.systemUiVisibility = (

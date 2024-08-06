@@ -30,7 +30,7 @@ class TaniActivity : AppCompatActivity() {
             KWTItem("Dusun III", R.drawable.avatar, "Ketua 3", "Tanaman 3", "Lokasi 3", "Kontak 3", "Deskripsi 3","628123456789"),
             KWTItem("Dusun IV", R.drawable.avatar, "Ketua 4", "Tanaman 4", "Lokasi 4", "Kontak 4", "Deskripsi 4","628123456789"),
             KWTItem("Dusun V", R.drawable.avatar, "Ketua 5", "Tanaman 5", "Lokasi 5", "Kontak 5", "Deskripsi 5","628123456789"),
-            KWTItem("Dusun VI", R.drawable.avatar, "Ketua 6", "Tanaman 6", "Lokasi 6", "Kontak 6", "Deskripsi 6","628123456789"),
+            KWTItem("Dusun VI", R.drawable.kwt6, "Tuti Puji Astuti", "Sawi, Kangkung", "KWT Mawar Indah", "KWT Dusun 6 SungaiLangka", "KWT Mawar Indah merupakan kelompok ibu tani yang berproduksi sayuran berupa sawi dan kangkung. disini juga terdapat UMKM yang memproduksi bubuk Cabai, Coklat Susu, dan Rengginang untuk saat ini.","62895621754776"),
             KWTItem("Dusun VII", R.drawable.avatar, "Ketua 7", "Tanaman 7", "Lokasi 7", "Kontak 7", "Deskripsi 7","628123456789"),
             KWTItem("Dusun VIII", R.drawable.avatar, "Ketua 8", "Tanaman 8", "Lokasi 8", "Kontak 8", "Deskripsi 8","628123456789"),
             KWTItem("Dusun IX", R.drawable.avatar, "Ketua 9", "Tanaman 9", "Lokasi 9", "Kontak 9", "Deskripsi 9","628123456789"),

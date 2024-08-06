@@ -111,7 +111,8 @@
                         android:textColor="@color/black"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="isi sejarah" />
+                        android:fontFamily="@font/poppins_light"
+                        android:text="@string/batas" />
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
