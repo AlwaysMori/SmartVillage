@@ -49,7 +49,7 @@ class StrukturActivity : AppCompatActivity() {
             add(Struktur("Suwardi", "Jabatan", R.drawable.avatar, "628987654321", "IV"))
             add(Struktur("Bibit Suyanto", "Jabatan", R.drawable.avatar, "628987654321", "V"))
             add(Struktur("Budi Antriono", "Jabatan", R.drawable.avatar, "628987654321", "VI"))
-            add(Struktur("Sukardi", "Jabatan", R.drawable.avatar, "628987654321", "VII"))
+            add(Struktur("Sukardi", "Jabatan", R.drawable.avatar, "62895640123362", "VII"))
             add(Struktur("Priyo Sutoto", "Jabatan", R.drawable.avatar, "628987654321", "VIII"))
             add(Struktur("Sumariyanto", "Jabatan", R.drawable.avatar, "628987654321", "IX"))
             add(Struktur("Marsudi", "Jabatan", R.drawable.avatar, "628987654321", "X"))

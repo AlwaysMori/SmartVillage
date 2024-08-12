@@ -27,7 +27,7 @@ class KWTAdapter(private val items: List<KWTItem>) : RecyclerView.Adapter<KWTAda
         holder.binding.namaketua.text = "Ketua : ${item.namaKetua}"
         holder.binding.namatumbuhan.text = "Tanaman : ${item.namaTumbuhan}"
         holder.binding.lokasi.text = "Nama KWT : ${item.lokasi}"
-        holder.binding.kontak.text = "Google Maps : ${item.kontak}"
+        holder.binding.gmap.text = "Google Maps : ${item.gmap}"
         holder.binding.deskripsi.text = "Deskripsi : ${item.deskripsi}"
 
         holder.binding.contact.setOnClickListener {
@@ -53,7 +53,7 @@ class KWTAdapter(private val items: List<KWTItem>) : RecyclerView.Adapter<KWTAda
                                 it.namaKetua.lowercase().contains(query) ||
                                 it.namaTumbuhan.lowercase().contains(query) ||
                                 it.lokasi.lowercase().contains(query) ||
-                                it.kontak.lowercase().contains(query) ||
+                                it.gmap.lowercase().contains(query) ||
                                 it.deskripsi.lowercase().contains(query)
                     }
                 }

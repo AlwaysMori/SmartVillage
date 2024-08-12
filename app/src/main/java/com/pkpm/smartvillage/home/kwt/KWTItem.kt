@@ -6,7 +6,7 @@ data class KWTItem(
     val namaKetua: String,
     val namaTumbuhan: String,
     val lokasi: String,
-    val kontak: String,
+    val gmap: String,
     val deskripsi: String,
     val contact: String
 )

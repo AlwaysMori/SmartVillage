@@ -20,7 +20,7 @@ class KegiatanActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         val kegiatanList = listOf(
-            Kegiatan(R.drawable.avatar, "Judul Kegiatan 1", "Tanggal 1", "Caption Kegiatan 1"),
+            Kegiatan(R.drawable.keg1, "Proses Pengemasan UMKM Coksula di KWT Mawar Indah", "Selasa, 06 Agustus 2024", "KKN Darmajaya melakukan kunjungan pada KWT Mawar Indah yang memiliki beberapa UMKM dan hasil tanaman"),
             Kegiatan(R.drawable.avatar, "Judul Kegiatan 2", "Tanggal 2", "Caption Kegiatan 2"),
         )
 

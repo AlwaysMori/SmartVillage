@@ -25,17 +25,117 @@ class TaniActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         val items = listOf(
-            KWTItem("Dusun I", R.drawable.avatar, "Ketua 1", "Tanaman 1", "Lokasi 1", "Kontak 1", "Deskripsi 1","628123456789"),
-            KWTItem("Dusun II", R.drawable.avatar, "Ketua 2", "Tanaman 2", "Lokasi 2", "Kontak 2", "Deskripsi 2","628123456789"),
-            KWTItem("Dusun III", R.drawable.avatar, "Ketua 3", "Tanaman 3", "Lokasi 3", "Kontak 3", "Deskripsi 3","628123456789"),
-            KWTItem("Dusun IV", R.drawable.avatar, "Ketua 4", "Tanaman 4", "Lokasi 4", "Kontak 4", "Deskripsi 4","628123456789"),
-            KWTItem("Dusun V", R.drawable.avatar, "Ketua 5", "Tanaman 5", "Lokasi 5", "Kontak 5", "Deskripsi 5","628123456789"),
-            KWTItem("Dusun VI", R.drawable.kwt6, "Tuti Puji Astuti", "Sawi, Kangkung", "KWT Mawar Indah", "KWT Dusun 6 SungaiLangka", "KWT Mawar Indah merupakan kelompok ibu tani yang berproduksi sayuran berupa sawi dan kangkung. disini juga terdapat UMKM yang memproduksi bubuk Cabai, Coklat Susu, dan Rengginang untuk saat ini.","62895621754776"),
-            KWTItem("Dusun VII", R.drawable.avatar, "Ketua 7", "Tanaman 7", "Lokasi 7", "Kontak 7", "Deskripsi 7","628123456789"),
-            KWTItem("Dusun VIII", R.drawable.avatar, "Ketua 8", "Tanaman 8", "Lokasi 8", "Kontak 8", "Deskripsi 8","628123456789"),
-            KWTItem("Dusun IX", R.drawable.avatar, "Ketua 9", "Tanaman 9", "Lokasi 9", "Kontak 9", "Deskripsi 9","628123456789"),
-            KWTItem("Dusun X", R.drawable.avatar, "Ketua 10", "Tanaman 10", "Lokasi 10", "Kontak 10", "Deskripsi 10","628123456789")
+            KWTItem(
+                "Dusun I",
+                R.drawable.avatar,
+                "Ketua 1",
+                "Tanaman 1",
+                "Lokasi 1",
+                "Kontak 1",
+                "Deskripsi 1",
+                "628123456789"
+            ),
+            KWTItem(
+                "Dusun II",
+                R.drawable.avatar,
+                "Ketua 2",
+                "Tanaman 2",
+                "Lokasi 2",
+                "Kontak 2",
+                "Deskripsi 2",
+                "628123456789"
+            ),
+            KWTItem(
+                "Dusun III",
+                R.drawable.kwt3,
+                "IIS Kinanti",
+                "Pakcoi, Sawi, Kangkung, Seledri, Daun Bawang, Cabe Rawit, Kacang Panjang.",
+                "KWT Wijaya Kusuma",
+                "Kontak 3",
+                "Deskripsi 3",
+                "62895385270457"
+            ),
+            KWTItem(
+                "Dusun IV",
+                R.drawable.avatar,
+                "Ketua 4",
+                "Tanaman 4",
+                "Lokasi 4",
+                "Kontak 4",
+                "Deskripsi 4",
+                "628123456789"
+            ),
+            KWTItem(
+                "Dusun V",
+                R.drawable.avatar,
+                "Ketua 5",
+                "Tanaman 5",
+                "Lokasi 5",
+                "Kontak 5",
+                "Deskripsi 5",
+                "628123456789"
+            ),
+            KWTItem(
+                "Dusun VI",
+                R.drawable.kwt6,
+                "Tuti Puji Astuti",
+                "Sawi, Kangkung",
+                "KWT Mawar Indah",
+                "KWT Dusun 6 SungaiLangka",
+                "KWT Mawar Indah merupakan kelompok ibu tani yang berproduksi sayuran berupa sawi dan kangkung. Disini juga terdapat UMKM yang memproduksi bubuk Cabai, Coklat Susu, dan Rengginang untuk saat ini.",
+                "62895621754776"
+            ),
+            KWTItem(
+                "Dusun VII",
+                R.drawable.avatar,
+                "Emalia",
+                "Rampai, Terong, Kembang Pacar, Seledri, Kembang Kol.",
+                "KWT Kemuning",
+                "Kontak 7",
+                "Deskripsi 7",
+                "6285213432765"
+            ), KWTItem(
+                "Dusun VII",
+                R.drawable.kwt72,
+                "Okti Wahyuni",
+                "Kangkung, Kacang Panjang, Sawi, Cabe",
+                "KWT Makmur Sentosa",
+                "Kontak 7",
+                "Deskripsi 7",
+                "6282142224475"
+            ),
+            KWTItem(
+                "Dusun VIII",
+                R.drawable.kwt8,
+                "Supartiah",
+                "Kacang Panjang, Buncis, Kol, Daun Bawang, Kangkung, Tomat, Terong, Pakcoi, Sawi, Kailan, Seledri, Oyong, Kembang Kol, Temu Lawak, Rampai, Kunyit, Jahe, Bayam, Genjer, Labu Siam, Terong Lalap.",
+                "Lokasi 8",
+                "Kontak 8",
+                "Deskripsi 8",
+                " 6289501003100"
+            ),
+            KWTItem(
+                "Dusun IX",
+                R.drawable.avatar,
+                "Ketua 9",
+                "Tanaman 9",
+                "Lokasi 9",
+                "Kontak 9",
+                "Deskripsi 9",
+                "628123456789"
+            ),
+            KWTItem(
+                "Dusun X",
+                R.drawable.avatar,
+                "Ketua 10",
+                "Tanaman 10",
+                "Lokasi 10",
+                "Kontak 10",
+                "Deskripsi 10",
+                "628123456789"
+            )
         )
+
 
         adapter = KWTAdapter(items)
         binding.recyclerView.layoutManager = LinearLayoutManager(this)

@@ -52,7 +52,7 @@ class GalleryAdapter(
 
         val alertDialog = AlertDialog.Builder(context)
             .setView(dialogView)
-            .setPositiveButton("Close", null)
+            .setPositiveButton("Tutup", null)
             .create()
 
         alertDialog.setOnShowListener {

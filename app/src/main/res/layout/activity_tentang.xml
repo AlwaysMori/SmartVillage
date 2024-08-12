@@ -40,7 +40,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="14dp"
         android:background="@color/blue_light2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.6"
@@ -55,7 +55,7 @@
             android:background="@color/blue_light2"
             android:fontFamily="@font/poppins_light"
             android:padding="16dp"
-            android:text="ISI TENTANG"
+            android:text="@string/about"
             android:textColor="#000000"
             android:textSize="16sp"
             tools:ignore="MissingConstraints" />

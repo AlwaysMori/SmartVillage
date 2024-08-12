@@ -97,8 +97,8 @@ class MainActivity : AppCompatActivity() {
         pieChart = findViewById(R.id.pieChart)
 
         val pieEntries = listOf(
-            PieEntry(60f, "Pria"),
-            PieEntry(40f, "Wanita")
+            PieEntry(3167f, "Pria"),
+            PieEntry(2942f, "Wanita")
         )
 
         val dataSet = PieDataSet(pieEntries, "").apply {
@@ -114,12 +114,12 @@ class MainActivity : AppCompatActivity() {
         pieChart.description.isEnabled = false
         pieChart.legend.isEnabled = true
         pieChart.setDrawEntryLabels(false)
-        pieChart.animateY(1000)
+        pieChart.animateY(1500)
     }
 
 
     private fun setupViewPager() {
-        val bannerImages = listOf(R.drawable.profil, R.drawable.avatar, R.drawable.img)
+        val bannerImages = listOf(R.drawable.slide1, R.drawable.slide2, R.drawable.slide3, R.drawable.slide4)
         adapter = BannerAdapter(bannerImages)
         binding.bannerViewPager.adapter = adapter
         handler.postDelayed(runnable, slideInterval)
@@ -130,7 +130,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
-
 
         binding.profil.setOnClickListener {
             val intent = Intent(this, ProfilActivity::class.java)

@@ -26,7 +26,7 @@ class UmkmActivity : AppCompatActivity() {
             UMKM("Bubuk Cabai", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.cabe, "https://wa.me/62895621754776"),
             UMKM("Rengginang", "Tuti Puji Astuti", "Rp. 35.000,00", R.drawable.rengginang, "https://wa.me/62895621754776"),
             UMKM("Coksula", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.coksula, "https://wa.me/62895621754776"),
-            UMKM("UMKM 4", "Pemilik 4", "Harga 4", R.drawable.umkm, "https://wa.me/6285809781024"),
+            UMKM("Gorengan, Pecel, Karedok, Soto, Ketoprak, Geblek", "Warung Kedai Yama", "Rp. 500,00 - 10.000,00", R.drawable.umkm, "https://wa.me/62895385270457"),
             UMKM("UMKM 5", "Pemilik 5", "Harga 5", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 6", "Pemilik 6", "Harga 6", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("Kerupuk", "Pemilik 7", "Harga 7", R.drawable.umkm, "https://wa.me/6285809781024"),

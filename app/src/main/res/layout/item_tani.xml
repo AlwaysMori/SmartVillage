@@ -92,7 +92,7 @@
 
                 <!-- Contact Information -->
                 <TextView
-                    android:id="@+id/kontak"
+                    android:id="@+id/gmap"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/navy"
