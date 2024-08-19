@@ -25,9 +25,11 @@ class GaleriActivity : AppCompatActivity() {
             val items = listOf(
                 GalleryAdapter.GalleryItem(R.drawable.slide3, "Tugu Masuk Desa SungaiLangka"),
                 GalleryAdapter.GalleryItem(R.drawable.slide4, "Balai Desa SungaiLangka"),
-                GalleryAdapter.GalleryItem(R.drawable.lapangan, "Lapangan Bola SungaiLangka")
+                GalleryAdapter.GalleryItem(R.drawable.lapangan, "Lapangan Bola SungaiLangka"),
+                GalleryAdapter.GalleryItem(R.drawable.voli, "Lapangan Voli SungaiLangka")
 
-                )
+
+            )
 
             val adapter = GalleryAdapter(items, this)
             recyclerView.adapter = adapter

@@ -27,23 +27,23 @@ class TaniActivity : AppCompatActivity() {
         val items = listOf(
             KWTItem(
                 "Dusun I",
-                R.drawable.avatar,
-                "Ketua 1",
-                "Tanaman 1",
-                "Lokasi 1",
-                "Kontak 1",
-                "Deskripsi 1",
-                "628123456789"
+                R.drawable.kwt1,
+                "Sukiharti",
+                "Timun, Pakcoy, Sawi, Daun Bawang, Seledri, Tomat, Bayam Merah, Bawang Merah",
+                "KWT Dahlia",
+                " - ",
+                " - ",
+                "6285368116692"
             ),
             KWTItem(
                 "Dusun II",
-                R.drawable.avatar,
-                "Ketua 2",
-                "Tanaman 2",
-                "Lokasi 2",
-                "Kontak 2",
-                "Deskripsi 2",
-                "628123456789"
+                R.drawable.kwt2,
+                "Sri Hartati",
+                "Kacang Tanah, Kangkung",
+                "KWT Srikandi",
+                " - ",
+                " - ",
+                "62895605899753"
             ),
             KWTItem(
                 "Dusun III",
@@ -51,29 +51,29 @@ class TaniActivity : AppCompatActivity() {
                 "IIS Kinanti",
                 "Pakcoi, Sawi, Kangkung, Seledri, Daun Bawang, Cabe Rawit, Kacang Panjang.",
                 "KWT Wijaya Kusuma",
-                "Kontak 3",
-                "Deskripsi 3",
+                " - ",
+                " - ",
                 "62895385270457"
             ),
             KWTItem(
                 "Dusun IV",
-                R.drawable.avatar,
-                "Ketua 4",
-                "Tanaman 4",
-                "Lokasi 4",
-                "Kontak 4",
-                "Deskripsi 4",
-                "628123456789"
+                R.drawable.kwt4,
+                "Alyah",
+                "Daun Bawang, Kangkung, Sawi, Terong, Tomat, Cabe",
+                "KWT Sri Rejeki",
+                " - ",
+                " - ",
+                "6281379797960"
             ),
             KWTItem(
                 "Dusun V",
-                R.drawable.avatar,
-                "Ketua 5",
-                "Tanaman 5",
-                "Lokasi 5",
-                "Kontak 5",
-                "Deskripsi 5",
-                "628123456789"
+                R.drawable.kwt5,
+                "Krismiati",
+                "Jahe, Kacang Tanah, Cabe, Terong",
+                "KWT Mitra Abadi",
+                " - ",
+                " - ",
+                "6281541373076"
             ),
             KWTItem(
                 "Dusun VI",
@@ -91,8 +91,8 @@ class TaniActivity : AppCompatActivity() {
                 "Emalia",
                 "Rampai, Terong, Kembang Pacar, Seledri, Kembang Kol.",
                 "KWT Kemuning",
-                "Kontak 7",
-                "Deskripsi 7",
+                " - ",
+                " - ",
                 "6285213432765"
             ), KWTItem(
                 "Dusun VII",
@@ -100,8 +100,8 @@ class TaniActivity : AppCompatActivity() {
                 "Okti Wahyuni",
                 "Kangkung, Kacang Panjang, Sawi, Cabe",
                 "KWT Makmur Sentosa",
-                "Kontak 7",
-                "Deskripsi 7",
+                " - ",
+                " - ",
                 "6282142224475"
             ),
             KWTItem(
@@ -109,9 +109,9 @@ class TaniActivity : AppCompatActivity() {
                 R.drawable.kwt8,
                 "Supartiah",
                 "Kacang Panjang, Buncis, Kol, Daun Bawang, Kangkung, Tomat, Terong, Pakcoi, Sawi, Kailan, Seledri, Oyong, Kembang Kol, Temu Lawak, Rampai, Kunyit, Jahe, Bayam, Genjer, Labu Siam, Terong Lalap.",
-                "Lokasi 8",
-                "Kontak 8",
-                "Deskripsi 8",
+                "KWT Bina Sejahtera",
+                " - ",
+                " - ",
                 " 6289501003100"
             ),
             KWTItem(
@@ -120,19 +120,19 @@ class TaniActivity : AppCompatActivity() {
                 "Ketua 9",
                 "Tanaman 9",
                 "Lokasi 9",
-                "Kontak 9",
-                "Deskripsi 9",
+                " - ",
+                " - ",
                 "628123456789"
             ),
             KWTItem(
                 "Dusun X",
-                R.drawable.avatar,
-                "Ketua 10",
-                "Tanaman 10",
-                "Lokasi 10",
-                "Kontak 10",
-                "Deskripsi 10",
-                "628123456789"
+                R.drawable.kwt10,
+                "Asmawati",
+                "Terong, Rempai, Sawi",
+                "KWT Mekar Sari",
+                " - ",
+                " - ",
+                "6285609195942"
             )
         )
 

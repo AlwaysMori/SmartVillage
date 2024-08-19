@@ -17,8 +17,7 @@ import com.github.mikephil.charting.charts.PieChart
 import com.github.mikephil.charting.data.PieData
 import com.github.mikephil.charting.data.PieDataSet
 import com.github.mikephil.charting.data.PieEntry
-import com.google.android.material.tabs.TabLayout
-import com.google.android.material.tabs.TabLayoutMediator
+
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.home.about.AboutActivity
 import com.pkpm.smartvillage.home.galeri.GaleriActivity
