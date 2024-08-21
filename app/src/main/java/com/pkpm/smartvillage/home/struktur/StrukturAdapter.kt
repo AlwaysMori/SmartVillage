@@ -18,7 +18,6 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
         val namaTextView: TextView = itemView.findViewById(R.id.namaTextView)
-        val masaJabatanTextView: TextView = itemView.findViewById(R.id.masaJabatanTextView)
         val dusunTextView: TextView = itemView.findViewById(R.id.dusun)
         val hubungiButton: Button = itemView.findViewById(R.id.hubungiButton)
         val bagian: TextView = itemView.findViewById((R.id.bagian))
@@ -32,7 +31,6 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val item = filteredList[position]
         holder.namaTextView.text = "Nama : ${item.nama}"
-        holder.masaJabatanTextView.text = "Masa Jabatan : ${item.masaJabatan}"
         holder.imageView.setImageResource(item.gambar)
 
         if (showDusun) {
@@ -64,7 +62,7 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
             itemList
         } else {
             itemList.filter {
-                it.nama.contains(query, ignoreCase = true) || it.masaJabatan.contains(query, ignoreCase = true)
+                it.nama.contains(query, ignoreCase = true)
             }
         }
         notifyDataSetChanged()

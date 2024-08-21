@@ -29,31 +29,32 @@ class StrukturActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         kadesList.apply {
-            add(Struktur("Erwan Sukijo.SP", "Jabatan", R.drawable.avatar, "628123456789"))
+            add(Struktur("Erwan Sukijo.SP", R.drawable.pns, "628123456789"))
         }
 
         sekdesList.apply {
-            add(Struktur("Junaedi Abdullah", "Jabatan", R.drawable.avatar, "628123456789"))
+            add(Struktur("Junaedi Abdullah", R.drawable.pns, "628123456789"))
         }
 
         kasiList.apply {
-            add(Struktur("Rois Adi Irawan, S.Pd", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Pemerintahan"))
-            add(Struktur("Soleman, ST", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Kesejahteraan"))
-            add(Struktur("Erfangi", "Jabatan", R.drawable.avatar, "628123456789", bagian = "Kasi Pelayanan"))
+            add(Struktur("Rois Adi Irawan, S.Pd", R.drawable.pns, "628123456789", bagian = "Kasi Pemerintahan"))
+            add(Struktur("Soleman, ST", R.drawable.pns, "628123456789", bagian = "Kasi Kesejahteraan"))
+            add(Struktur("Erfangi", R.drawable.pns, "628123456789", bagian = "Kasi Pelayanan"))
         }
 
         kadusList.apply {
-            add(Struktur("Sukarjo", "Jabatan", R.drawable.avatar, "628987654321", "I"))
-            add(Struktur("Prastio Handoko", "Jabatan", R.drawable.avatar, "628987654321", "II"))
-            add(Struktur("Alvi Robi Taroreh", "Jabatan", R.drawable.avatar, "628987654321", "III"))
-            add(Struktur("Suwardi", "Jabatan", R.drawable.avatar, "628987654321", "IV"))
-            add(Struktur("Bibit Suyanto", "Jabatan", R.drawable.avatar, "628987654321", "V"))
-            add(Struktur("Budi Antriono", "Jabatan", R.drawable.avatar, "628987654321", "VI"))
-            add(Struktur("Sukardi", "Jabatan", R.drawable.avatar, "62895640123362", "VII"))
-            add(Struktur("Priyo Sutoto", "Jabatan", R.drawable.avatar, "628987654321", "VIII"))
-            add(Struktur("Sumariyanto", "Jabatan", R.drawable.avatar, "628987654321", "IX"))
-            add(Struktur("Marsudi", "Jabatan", R.drawable.avatar, "628987654321", "X"))
+            add(Struktur("Sukarjo", R.drawable.pns, "628987654321", "I"))
+            add(Struktur("Prastio Handoko", R.drawable.pns, "628987654321", "II"))
+            add(Struktur("Alvi Robi Taroreh", R.drawable.pns, "628987654321", "III"))
+            add(Struktur("Suwardi", R.drawable.pns, "628987654321", "IV"))
+            add(Struktur("Bibit Suyanto", R.drawable.pns, "62895355014929", "V"))
+            add(Struktur("Budi Antriono", R.drawable.pns, "628987654321", "VI"))
+            add(Struktur("Sukardi", R.drawable.pns, "62895640123362", "VII"))
+            add(Struktur("Priyo Sutoto", R.drawable.pns, "628987654321", "VIII"))
+            add(Struktur("Sumariyanto", R.drawable.pns, "628987654321", "IX"))
+            add(Struktur("Marsudi", R.drawable.pns, "628987654321", "X"))
         }
+
 
         binding.kadesRecyclerView.layoutManager = LinearLayoutManager(this)
         binding.kasiRecyclerView.layoutManager = LinearLayoutManager(this)
