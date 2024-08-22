@@ -7,6 +7,7 @@ import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.ui.graphics.Color
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pkpm.smartvillage.R
 import com.pkpm.smartvillage.databinding.ActivityUmkmBinding
@@ -48,12 +49,10 @@ class UmkmActivity : AppCompatActivity() {
             override fun afterTextChanged(s: Editable?) {
             }
         })
-        setupEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
 
     }
-    private fun setupEdgeToEdge() {
-        enableEdgeToEdge()
-    }
+
     private fun hideNavigationBar() {
         window.decorView.systemUiVisibility = (
                 View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY

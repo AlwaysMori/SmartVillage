@@ -8,6 +8,7 @@ import com.pkpm.smartvillage.R
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pkpm.smartvillage.databinding.ActivityMainBinding
 import com.pkpm.smartvillage.databinding.ActivityTaniBinding
@@ -22,7 +23,7 @@ class TaniActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityTaniBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        enableEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
 
         val items = listOf(
             KWTItem(

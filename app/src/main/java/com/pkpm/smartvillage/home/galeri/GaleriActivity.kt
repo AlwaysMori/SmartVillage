@@ -3,6 +3,7 @@ package com.pkpm.smartvillage.home.galeri
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.pkpm.smartvillage.R
@@ -17,7 +18,6 @@ class GaleriActivity : AppCompatActivity() {
         override fun onCreate(savedInstanceState: Bundle?) {
             super.onCreate(savedInstanceState)
             setContentView(R.layout.activity_galeri)
-            enableEdgeToEdge()
             val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
             recyclerView.layoutManager = LinearLayoutManager(this)
 
@@ -31,9 +31,12 @@ class GaleriActivity : AppCompatActivity() {
 
             )
 
+            window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
             val adapter = GalleryAdapter(items, this)
             recyclerView.adapter = adapter
         }
+
+
     }
 
 

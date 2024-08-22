@@ -53,18 +53,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setupEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
         setupPieChart()
         setupViewPager()
         setupClickListeners()
         setupProfesichart()
     }
 
-    private fun setupEdgeToEdge() {
-        enableEdgeToEdge()
-        window.statusBarColor = getColor(R.color.blue_light2)
-        hideNavigationBar()
-    }
+
     private fun setupProfesichart() {
         profesichart = findViewById(R.id.profesichart)
 

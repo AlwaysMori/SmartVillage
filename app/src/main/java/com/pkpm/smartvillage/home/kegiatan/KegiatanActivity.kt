@@ -5,6 +5,7 @@ import android.text.Editable
 import android.text.TextWatcher
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pkpm.smartvillage.R
 import com.pkpm.smartvillage.databinding.ActivityKegiatanBinding
@@ -15,7 +16,7 @@ class KegiatanActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
         binding = ActivityKegiatanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -27,7 +28,7 @@ class KegiatanActivity : AppCompatActivity() {
             Kegiatan(R.drawable.cat1, "Melakukan Pengecatan Ulang Gardu Dusun 3 Jelang Kemerdekaan", "Rabu, 14 Agustus 2024",  "Mahasiswa PKPM dengan semangat gotong royong melakukan pengecatan ulang gardu di Dusun 3 sebagai persiapan menyambut Hari Kemerdekaan. Dengan warna-warna yang lebih cerah, gardu kini menjadi simbol kebanggaan dan semangat nasionalisme yang terus menyala. Aksi ini tidak hanya mempercantik lingkungan, tetapi juga menjadi bukti nyata kontribusi mahasiswa dalam menjaga dan merayakan nilai-nilai kemerdekaan di masyarakat."),
             Kegiatan(R.drawable.sosumkm, "Sosialisasi dari Dosen Kampus Darmajaya ke UMKM Desa Sungai Langka", "Kamis, 15 Agustus 2024", "Dalam rangka pemberdayaan ekonomi desa, dosen dari Kampus Darmajaya mengadakan sosialisasi kepada para pelaku UMKM di Desa Sungai Langka. Kegiatan ini bertujuan untuk memberikan wawasan dan strategi dalam mengembangkan usaha, meningkatkan kualitas produk, serta memanfaatkan teknologi digital untuk memperluas pasar. Kehadiran dosen memberikan motivasi dan pengetahuan baru yang sangat berharga bagi kemajuan UMKM di desa ini."),
             Kegiatan(R.drawable.bultang, "Pembentukan Panitia Bulutangkis SULA Cup 2024", "Senin, 19 Agustus 2024", "Untuk menyukseskan perhelatan SULA Cup 2024, mahasiswa PKPM bersama warga Desa Sungai Langka mengadakan rapat pembentukan panitia bulutangkis. Dengan semangat kebersamaan, panitia dibentuk untuk memastikan jalannya turnamen dengan lancar dan meriah. Setiap anggota panitia siap memberikan kontribusi terbaik mereka dalam mempersiapkan segala kebutuhan acara, mulai dari pendaftaran peserta hingga penyediaan hadiah. SULA Cup 2024 diharapkan menjadi ajang yang tidak hanya mengasah kemampuan, tetapi juga mempererat persatuan dan semangat olahraga di desa."),
-            Kegiatan(R.drawable.avatar, "", "", ""),
+            Kegiatan(R.drawable.tujubelas, "Ikut Serta menjadi Panitia 17 Agustus dan memeriahkannya", "Sabtu, 17 Agustus 2024", "Mahasiswa PKPM dengan penuh semangat bergabung sebagai panitia dalam perayaan Hari Kemerdekaan 17 Agustus di Dusun 3. Bersama dengan warga, mereka berperan aktif dalam mempersiapkan berbagai lomba dan acara hiburan untuk memeriahkan momen bersejarah ini. Keterlibatan mereka tidak hanya menambah keceriaan acara, tetapi juga memperkuat ikatan antara mahasiswa dan masyarakat. Dengan gotong royong dan kebersamaan, perayaan 17 Agustus tahun ini menjadi lebih meriah dan penuh makna."),
             Kegiatan(R.drawable.avatar, "", "", ""),
             Kegiatan(R.drawable.avatar, "", "", ""),
             Kegiatan(R.drawable.avatar, "", "", ""),

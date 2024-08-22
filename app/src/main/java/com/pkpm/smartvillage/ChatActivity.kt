@@ -67,8 +67,152 @@ class ChatActivity : AppCompatActivity() {
     - Pertanyaan umum tentang pendidikan tinggi yang tidak berhubungan dengan program PKPM.
     - Pertanyaan pribadi yang tidak relevan dengan tujuan dan manfaat program PKPM.
 
+   
     Mohon tetap fokus pada diskusi mengenai program PKPM IIB Darmajaya dan kontribusinya terhadap masyarakat Sungai Langka, Gedongtataan, Lampung.
-""".trimIndent()
+    
+    Berikut adalah data KWT SungaiLangka 2024 :
+
+- **Dusun I**  
+  - Nama: Sukiharti  
+  - Tanaman: Timun, Pakcoy, Sawi, Daun Bawang, Seledri, Tomat, Bayam Merah, Bawang Merah  
+  - Nama KWT: KWT Dahlia  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6285368116692
+
+- **Dusun II**  
+  - Nama: Sri Hartati  
+  - Tanaman: Kacang Tanah, Kangkung  
+  - Nama KWT: KWT Srikandi  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 62895605899753
+
+- **Dusun III**  
+  - Nama: IIS Kinanti  
+  - Tanaman: Pakcoi, Sawi, Kangkung, Seledri, Daun Bawang, Cabe Rawit, Kacang Panjang  
+  - Nama KWT: KWT Wijaya Kusuma  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 62895385270457
+
+- **Dusun IV**  
+  - Nama: Alyah  
+  - Tanaman: Daun Bawang, Kangkung, Sawi, Terong, Tomat, Cabe  
+  - Nama KWT: KWT Sri Rejeki  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6281379797960
+
+- **Dusun V**  
+  - Nama: Krismiati  
+  - Tanaman: Jahe, Kacang Tanah, Cabe, Terong  
+  - Nama KWT: KWT Mitra Abadi  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6281541373076
+
+- **Dusun VI**  
+  - Nama: Tuti Puji Astuti  
+  - Tanaman: Sawi, Kangkung  
+  - Nama KWT: KWT Mawar Indah  
+  - Keterangan 1: KWT Dusun 6 SungaiLangka  
+  - Keterangan 2: KWT Mawar Indah merupakan kelompok ibu tani yang berproduksi sayuran berupa sawi dan kangkung. Disini juga terdapat UMKM yang memproduksi bubuk Cabai, Coklat Susu, dan Rengginang untuk saat ini.  
+  - Nomor HP: 62895621754776
+
+- **Dusun VII**  
+  - Nama: Emalia  
+  - Tanaman: Rampai, Terong, Kembang Pacar, Seledri, Kembang Kol  
+  - Nama KWT: KWT Kemuning  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6285213432765
+
+- **Dusun VII**  
+  - Nama: Okti Wahyuni  
+  - Tanaman: Kangkung, Kacang Panjang, Sawi, Cabe  
+  - Nama KWT: KWT Makmur Sentosa  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6282142224475
+
+- **Dusun VIII**  
+  - Nama: Supartiah  
+  - Tanaman: Kacang Panjang, Buncis, Kol, Daun Bawang, Kangkung, Tomat, Terong, Pakcoi, Sawi, Kailan, Seledri, Oyong, Kembang Kol, Temu Lawak, Rampai, Kunyit, Jahe, Bayam, Genjer, Labu Siam, Terong Lalap  
+  - Nama KWT: KWT Bina Sejahtera  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6289501003100
+
+- **Dusun IX**  
+  - Nama: Ketua 9  
+  - Tanaman: Tanaman 9  
+  - Nama KWT: Lokasi 9  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 628123456789
+
+- **Dusun X**  
+  - Nama: Asmawati  
+  - Tanaman: Terong, Rempai, Sawi  
+  - Nama KWT: KWT Mekar Sari  
+  - Keterangan 1: -  
+  - Keterangan 2: -  
+  - Nomor HP: 6285609195942
+    
+    Berikut adalah data struktur desa sungailangka 2024 :
+
+- **Kepala Desa (Kades):**
+  - Nama: Erwan Sukijo.SP  
+  - Nomor HP: 628123456789
+
+- **Sekretaris Desa (Sekdes):**
+  - Nama: Junaedi Abdullah  
+  - Nomor HP: 628123456789
+
+- **Kasi:**
+  - Nama: Rois Adi Irawan, S.Pd  
+    - Bagian: Kasi Pemerintahan  
+    - Nomor HP: 628123456789
+  - Nama: Soleman, ST  
+    - Bagian: Kasi Kesejahteraan  
+    - Nomor HP: 628123456789
+  - Nama: Erfangi  
+    - Bagian: Kasi Pelayanan  
+    - Nomor HP: 628123456789
+
+- **Kadus:**
+  - Nama: Sukarjo  
+    - Dusun: I  
+    - Nomor HP: 628987654321
+  - Nama: Prastio Handoko  
+    - Dusun: II  
+    - Nomor HP: 628987654321
+  - Nama: Alvi Robi Taroreh  
+    - Dusun: III  
+    - Nomor HP: 628987654321
+  - Nama: Suwardi  
+    - Dusun: IV  
+    - Nomor HP: 628987654321
+  - Nama: Bibit Suyanto  
+    - Dusun: V  
+    - Nomor HP: 62895355014929
+  - Nama: Budi Antriono  
+    - Dusun: VI  
+    - Nomor HP: 628987654321
+  - Nama: Sukardi  
+    - Dusun: VII  
+    - Nomor HP: 62895640123362
+  - Nama: Priyo Sutoto  
+    - Dusun: VIII  
+    - Nomor HP: 628987654321
+  - Nama: Sumariyanto  
+    - Dusun: IX  
+    - Nomor HP: 628987654321
+  - Nama: Marsudi  
+    - Dusun: X  
+    - Nomor HP: 628987654321
+    """.trimIndent()
 
                     )
                 )

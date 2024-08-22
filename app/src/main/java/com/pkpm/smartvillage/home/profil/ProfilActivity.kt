@@ -4,13 +4,14 @@ import android.os.Bundle
 import android.view.View
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 
 import com.pkpm.smartvillage.R
 
 class ProfilActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
         setContentView(R.layout.activity_profil)
 
     } private fun hideNavigationBar() {

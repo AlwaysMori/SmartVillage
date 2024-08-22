@@ -31,7 +31,7 @@ class SplashActivity : AppCompatActivity() {
         val fadeIn = AnimationUtils.loadAnimation(this, R.anim.fade_in)
         val textAnimation = AnimationUtils.loadAnimation(this, R.anim.teks)
         val textAnimation2 = AnimationUtils.loadAnimation(this, R.anim.teks2)
-
+        val textAnimation3 = AnimationUtils.loadAnimation(this, R.anim.teks3)
         fadeIn.setAnimationListener(object : Animation.AnimationListener {
             override fun onAnimationStart(animation: Animation?) {
             }
@@ -53,6 +53,7 @@ class SplashActivity : AppCompatActivity() {
 
         binding.textView4.startAnimation(textAnimation)
         binding.textView5.startAnimation(textAnimation2)
+        binding.tv5.startAnimation(textAnimation3)
     }
 
     private fun hideNavigationBar() {

@@ -3,6 +3,7 @@ package com.pkpm.smartvillage.home.struktur
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import androidx.core.widget.addTextChangedListener
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.pkpm.smartvillage.R
@@ -26,7 +27,7 @@ class StrukturActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityStrukturBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        enableEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
 
         kadesList.apply {
             add(Struktur("Erwan Sukijo.SP", R.drawable.pns, "628123456789"))

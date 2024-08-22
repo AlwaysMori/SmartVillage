@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.pkpm.smartvillage.R
 import com.pkpm.smartvillage.databinding.ActivityAboutBinding
 
@@ -12,7 +13,7 @@ class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
         binding = ActivityAboutBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setupClickListeners()
