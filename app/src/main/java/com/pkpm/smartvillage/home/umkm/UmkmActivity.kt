@@ -31,7 +31,7 @@ class UmkmActivity : AppCompatActivity() {
             UMKM("Minuman Bubuk Jahe", "KWT Srikandi", " - ", R.drawable.umkm21, "https://wa.me/62895605899753"),
             UMKM("Perlengkapan Tani", "Saminem", "Rp. 5.000,00 - 200.000,00", R.drawable.saminem, "https://wa.me/628981732844"),
             UMKM("Craft, Snack, dan Cookies", "Andah Tatrawati", "-", R.drawable.umkm11, "https://wa.me/6288287807524"),
-            UMKM("UMKM 8", "Pemilik 8", "Harga 8", R.drawable.umkm, "https://wa.me/6285809781024"),
+            UMKM("Krpiki Pisang karamel wijen, Keripiki chojen, dan Brownies Kering", "UMKM Louisa", "-", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 9", "Pemilik 9", "Harga 9", R.drawable.umkm, "https://wa.me/6285809781024"),
             UMKM("UMKM 10", "Pemilik 10", "Harga 10", R.drawable.umkm, "https://wa.me/6285809781024")
         )

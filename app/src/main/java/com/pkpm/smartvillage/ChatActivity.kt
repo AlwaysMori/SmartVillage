@@ -18,7 +18,7 @@ class ChatActivity : AppCompatActivity() {
         _binding = ActivityChatBinding.inflate(layoutInflater)
         setContentView(binding.root)
         enableEdgeToEdge()
-        window.statusBarColor = getColor(R.color.white)
+        window.statusBarColor = getColor(R.color.navy)
         hideNavigationBar()
         binding.composeView.setContent {
             GeminiChatView(

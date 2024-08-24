@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.pkpm.smartvillage.R
 
@@ -48,9 +49,14 @@ class StrukturAdapter(private val itemList: List<Struktur>, private val showDusu
         }
 
         holder.hubungiButton.setOnClickListener {
-            val uri = Uri.parse("https://wa.me/${item.nomorWa}")
-            val intent = Intent(Intent.ACTION_VIEW, uri)
-            it.context.startActivity(intent)
+            val nomorWa = item.nomorWa
+            if (!nomorWa.isNullOrEmpty()) {
+                val uri = Uri.parse("https://wa.me/$nomorWa")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                it.context.startActivity(intent)
+            } else {
+                Toast.makeText(it.context, "Nomor WhatsApp tidak tersedia", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 

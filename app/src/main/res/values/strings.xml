@@ -16,4 +16,37 @@
 </string>
     <string name="about">ISKA adalah aplikasi yang menyediakan informasi lengkap tentang Desa Sungai Langka. Terinspirasi oleh kekayaan UMKM, Kelompok Wanita Tani (KWT), sumber daya manusia, dan keindahan alamnya, aplikasi ini bertujuan untuk mendukung kemajuan UMKM di desa tersebut. ISKA memfasilitasi UMKM dengan menyediakan platform dalam aplikasi untuk memperkenalkan produk mereka, sekaligus memberikan pengetahuan umum dan memudahkan pendatang dalam mencari UMKM dan KWT yang tersedia di Dusun Sungai Langka. Selain itu, aplikasi ini juga menampilkan struktur serta profil lengkap Desa Sungai Langka, memberikan gambaran menyeluruh mengenai pemerintahan desa dan tokoh-tokoh penting di dalamnya.</string>
 
+
+
+    Berikut adalah string dengan penggunaan `\n` untuk memisahkan paragraf:
+
+    ```xml
+    <string name="visi_misi_desa"><b>VISI</b>\n\nTerwujudnya Sungai Langka menjadi Desa Wisata berbasis masyarakat dan potensi kearifan lokal yang “SIMPATIK”.\n\n\n
+        <b>MISI</b>\n\n
+- Meningkatkan pelayanan prima kepada masyarakat yang mudah, cepat, dan birokrasi yang luwes.\n
+- Menciptakan pemerintahan yang bersih, transparan, dan akuntabel.\n
+- Meningkatkan SDM perangkat Desa untuk meningkatkan kinerja dan pelayanan kepada masyarakat sesuai dengan aturan perundang-undangan yang berlaku.\n
+- Mempermudah dan mempercepat pembuatan perizinan untuk usaha masyarakat di segala bidang yang tidak bertentangan dengan norma agama, adat, budaya, dan sosial masyarakat.\n
+- Mendorong dan memaksimalkan BUMDES untuk mengembangkan usaha guna meningkatkan pendapatan asli desa.\n\n
+2. Bidang Pembangunan\n
+- Membangun infrastruktur dan mental spiritual sesuai dengan aspirasi dan skala prioritas.\n
+- Membangun spot-spot wisata di masing-masing dusun sesuai dengan potensi dan antusiasme masyarakat.\n
+- Meningkatkan infrastruktur jalan lingkungan dan sarana prasarana umum di dusun-dusun sesuai dengan kebutuhan dan kemampuan keuangan desa.\n
+- Meningkatkan fasilitas sarana dan prasarana olahraga dengan kemampuan sendiri atau bantuan dari pihak terkait yang tidak mengikat.\n
+- Mencari sumber mata air baru untuk meningkatkan pelayanan kebutuhan air bersih masyarakat.\n\n
+3. Bidang Pembinaan Masyarakat\n
+- Meningkatkan peran dan kemampuan lembaga-lembaga yang ada di desa untuk membantu mempercepat kemajuan pembangunan desa.\n
+- Memberikan bekal keterampilan kepada lembaga kemasyarakatan supaya dapat menjadi motivator dan dinamisator yang handal untuk meningkatkan peran serta masyarakat dalam pembangunan desa.\n
+- Membina dan menginventarisir kelompok-kelompok pengajian yang ada di desa untuk meningkatkan kualitas mental dan moral masyarakat supaya tercipta generasi cerdas dan berakhlakul karimah.\n
+- Memberikan pembekalan kepada pemuda-pemudi supaya dapat menjadi pemandu wisata yang ramah, santun, dan kreatif.\n\n
+4. Bidang Pemberdayaan Masyarakat\n
+- Meningkatkan peran serta pemuda dalam setiap kegiatan yang ada di desa.\n
+- Meningkatkan peran serta kaum wanita melalui KWT dan UKM untuk menghasilkan produk unggulan desa yang berdaya saing.\n
+- Meningkatkan dan memanfaatkan lahan pekarangan sebagai sumber tambahan penghasilan keluarga dengan menggalakkan penanaman tanaman sayuran dan obat-obatan keluarga.\n
+- Membentuk asosiasi peternak untuk meningkatkan kualitas budidaya ternak dan menjaga kestabilan harga ternak di pasaran.</string>
+
+
+    <string name="dusun"><b>Dusun I</b>\nDusun ini merupakan dusun dengan jumlah penduduk tertinggi di Desa Sungai Langka. Dusun I memiliki berbagai fasilitas umum yang menunjang kehidupan sehari-hari warganya.\n\n<b>Dusun II</b>\nDusun II memiliki komunitas yang erat dan aktif dalam berbagai kegiatan sosial dan keagamaan. Meskipun ukurannya lebih kecil, dusun ini dikenal dengan semangat gotong royong warganya.\n\n<b>Dusun III</b>\nDusun III dikenal dengan lingkungan yang asri dan penduduk yang ramah. Dusun ini memiliki potensi besar dalam sektor pertanian, dengan banyak lahan subur yang digunakan untuk bercocok tanam.\n\n<b>Dusun IV</b>\nDusun IV adalah salah satu dusun yang strategis dengan akses yang baik ke berbagai fasilitas desa. Penduduknya sebagian besar bekerja di sektor perdagangan dan jasa.\n\n<b>Dusun V</b>\nDusun V memiliki keseimbangan antara lingkungan perumahan dan lahan pertanian. Warganya terkenal dengan keterampilan dalam kerajinan tangan yang menjadi salah satu sumber pendapatan utama.\n\n<b>Dusun VI</b>\nDusun VI memiliki populasi yang beragam dengan berbagai latar belakang ekonomi. Dusun ini juga memiliki beberapa kelompok tani yang aktif dalam meningkatkan hasil pertanian.\n\n<b>Dusun VII</b>\nDusun VII dikenal dengan kegiatan sosialnya yang aktif dan sering mengadakan acara-acara desa. Dusun ini juga memiliki beberapa fasilitas olahraga yang sering digunakan oleh penduduk.\n\n<b>Dusun VIII</b>\nDusun VIII merupakan salah satu dusun dengan populasi yang cukup besar. Di sini, terdapat beberapa kelompok usaha kecil dan menengah yang berkontribusi pada perekonomian lokal.\n\n<b>Dusun IX</b>\nDusun IX terletak di bagian yang agak terpencil namun memiliki kekayaan alam yang melimpah. Warganya banyak yang bekerja di sektor pertanian dan peternakan.\n\n<b>Dusun X</b>\nDusun X adalah dusun yang terletak di ujung Desa Sungai Langka. Dusun ini memiliki komunitas yang erat dan sering mengadakan kegiatan kebersamaan seperti kerja bakti dan perayaan adat.
+</string>
+
 </resources>

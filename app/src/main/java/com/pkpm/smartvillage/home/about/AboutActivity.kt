@@ -2,7 +2,6 @@ package com.pkpm.smartvillage.home.about
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.pkpm.smartvillage.R
