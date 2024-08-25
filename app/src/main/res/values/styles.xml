@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><!-- res/values/styles.xml -->
+    <style name="CustomDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:background">@color/navy</item>
+        <item name="android:windowBackground">@color/navy</item>
+    </style>
+</resources>

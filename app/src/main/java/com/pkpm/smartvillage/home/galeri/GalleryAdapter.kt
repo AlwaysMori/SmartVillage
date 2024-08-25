@@ -50,14 +50,14 @@ class GalleryAdapter(
         dialogImageView.setImageResource(item.imageResId)
         dialogPlaceName.text = item.placeName
 
-        val alertDialog = AlertDialog.Builder(context)
+        val alertDialog = AlertDialog.Builder(context, R.style.CustomDialogTheme)
             .setView(dialogView)
             .setPositiveButton("Tutup", null)
             .create()
 
         alertDialog.setOnShowListener {
             val positiveButton: Button = alertDialog.getButton(AlertDialog.BUTTON_POSITIVE)
-            positiveButton.setTextColor(context.resources.getColor(R.color.white, null))
+            positiveButton.setTextColor(context.resources.getColor(R.color.black, null))
         }
 
         alertDialog.show()

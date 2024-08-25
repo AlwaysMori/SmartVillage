@@ -88,7 +88,7 @@ class TaniActivity : AppCompatActivity() {
             ),
             KWTItem(
                 "Dusun VII",
-                R.drawable.avatar,
+                R.drawable.kwt,
                 "Emalia",
                 "Rampai, Terong, Kembang Pacar, Seledri, Kembang Kol.",
                 "KWT Kemuning",
@@ -117,7 +117,7 @@ class TaniActivity : AppCompatActivity() {
             ),
             KWTItem(
                 "Dusun IX",
-                R.drawable.avatar,
+                R.drawable.kwt,
                 "Ketua 9",
                 "Tanaman 9",
                 "Lokasi 9",

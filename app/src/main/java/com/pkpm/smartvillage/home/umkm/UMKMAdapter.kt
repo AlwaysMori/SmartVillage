@@ -46,8 +46,12 @@ class UMKMAdapter(private val umkmList: List<UMKM>) : RecyclerView.Adapter<UMKMA
             binding.imageViewUmkm.setImageResource(umkm.imageResId)
             binding.buttonContact.setOnClickListener {
                 val whatsappUrl = umkm.link
-                val intent = Intent(Intent.ACTION_VIEW, Uri.parse(whatsappUrl))
-                itemView.context.startActivity(intent)
+                if (!whatsappUrl.isNullOrEmpty()) {
+                    val intent = Intent(Intent.ACTION_VIEW, Uri.parse(whatsappUrl))
+                    itemView.context.startActivity(intent)
+                } else {
+                    Toast.makeText(itemView.context, "Nomer Whatsapp tidak tersedia", Toast.LENGTH_SHORT).show()
+                }
             }
             binding.root.setOnClickListener(null)
         }

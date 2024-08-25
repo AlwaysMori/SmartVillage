@@ -22,7 +22,10 @@ class GaleriActivity : AppCompatActivity() {
                 GalleryAdapter.GalleryItem(R.drawable.slide3, "Tugu Masuk Desa SungaiLangka"),
                 GalleryAdapter.GalleryItem(R.drawable.slide4, "Balai Desa SungaiLangka"),
                 GalleryAdapter.GalleryItem(R.drawable.lapangan, "Lapangan Bola SungaiLangka"),
-                GalleryAdapter.GalleryItem(R.drawable.voli, "Lapangan Voli SungaiLangka")
+                GalleryAdapter.GalleryItem(R.drawable.voli, "Lapangan Voli SungaiLangka"),
+                GalleryAdapter.GalleryItem(R.drawable.img_4, "Kolam Pemandian Pekon Janda"),
+                GalleryAdapter.GalleryItem(R.drawable.img_5, "Camping Sukma Ilang")
+
 
 
             )

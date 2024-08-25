@@ -30,7 +30,7 @@ class StrukturActivity : AppCompatActivity() {
         window.statusBarColor = ContextCompat.getColor(this, R.color.navy)
 
         kadesList.apply {
-            add(Struktur("Erwan Sukijo.SP", R.drawable.pns, ""))
+            add(Struktur("Erwan Sukijo.SP", R.drawable.pns, "6285279972444"))
         }
 
         sekdesList.apply {
@@ -44,16 +44,16 @@ class StrukturActivity : AppCompatActivity() {
         }
 
         kadusList.apply {
-            add(Struktur("Sukarjo", R.drawable.pns, "", "I"))
-            add(Struktur("Prastio Handoko", R.drawable.pns, "", "II"))
+            add(Struktur("Sukarjo", R.drawable.pns, "6289668914033", "I"))
+            add(Struktur("Prastio Handoko", R.drawable.pns, "6289503259665", "II"))
             add(Struktur("Alvi Robi Taroreh", R.drawable.pns, "62895428419219", "III"))
-            add(Struktur("Suwardi", R.drawable.pns, "", "IV"))
+            add(Struktur("Intan Oktaviani", R.drawable.pns, "6289510633349", "IV"))
             add(Struktur("Bibit Suyanto", R.drawable.pns, "62895355014929", "V"))
-            add(Struktur("Budi Antriono", R.drawable.pns, "", "VI"))
+            add(Struktur("Budi Antriono", R.drawable.pns, "6289699118535", "VI"))
             add(Struktur("Sukardi", R.drawable.pns, "62895640123362", "VII"))
-            add(Struktur("Priyo Sutoto", R.drawable.pns, "", "VIII"))
-            add(Struktur("Sumariyanto", R.drawable.pns, "", "IX"))
-            add(Struktur("Marsudi", R.drawable.pns, "", "X"))
+            add(Struktur("Priyo Sutoto", R.drawable.pns, "6289697802317", "VIII"))
+            add(Struktur("Sumariyanto", R.drawable.pns, "6285789082691", "IX"))
+            add(Struktur("Marsudi", R.drawable.pns, "6285768054652", "X"))
         }
 
 
