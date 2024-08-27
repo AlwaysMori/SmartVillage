@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Filter
 import android.widget.Filterable
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.pkpm.smartvillage.databinding.ItemTaniBinding
 
@@ -31,9 +32,15 @@ class KWTAdapter(private val items: List<KWTItem>) : RecyclerView.Adapter<KWTAda
         holder.binding.deskripsi.text = "Deskripsi : ${item.deskripsi}"
 
         holder.binding.contact.setOnClickListener {
-            val uri = Uri.parse("https://wa.me/${item.contact}")
-            val intent = Intent(Intent.ACTION_VIEW, uri)
-            holder.binding.root.context.startActivity(intent)
+            val contact = item.contact
+
+            if (contact.isNullOrBlank()) {
+                Toast.makeText(holder.binding.root.context, "Whatsapp tidak tersedia", Toast.LENGTH_SHORT).show()
+            } else {
+                val uri = Uri.parse("https://wa.me/$contact")
+                val intent = Intent(Intent.ACTION_VIEW, uri)
+                holder.binding.root.context.startActivity(intent)
+            }
         }
     }
 

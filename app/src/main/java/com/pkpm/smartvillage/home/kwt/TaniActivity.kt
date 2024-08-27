@@ -123,7 +123,7 @@ class TaniActivity : AppCompatActivity() {
                 "Lokasi 9",
                 " - ",
                 " - ",
-                "628123456789"
+                ""
             ),
             KWTItem(
                 "Dusun X",

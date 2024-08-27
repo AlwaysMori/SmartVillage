@@ -17,7 +17,6 @@
     <string name="about">ISKA adalah aplikasi yang menyediakan informasi lengkap tentang Desa Sungai Langka. Terinspirasi oleh kekayaan UMKM, Kelompok Wanita Tani (KWT), sumber daya manusia, dan keindahan alamnya, aplikasi ini bertujuan untuk mendukung kemajuan UMKM di desa tersebut. ISKA memfasilitasi UMKM dengan menyediakan platform dalam aplikasi untuk memperkenalkan produk mereka, sekaligus memberikan pengetahuan umum dan memudahkan pendatang dalam mencari UMKM dan KWT yang tersedia di Dusun Sungai Langka. Selain itu, aplikasi ini juga menampilkan struktur serta profil lengkap Desa Sungai Langka, memberikan gambaran menyeluruh mengenai pemerintahan desa dan tokoh-tokoh penting di dalamnya.</string>
 
 
-
     Berikut adalah string dengan penggunaan `\n` untuk memisahkan paragraf:
 
     ```xml
@@ -48,5 +47,14 @@
 
     <string name="dusun"><b>Dusun I</b>\nDusun ini merupakan dusun dengan jumlah penduduk tertinggi di Desa Sungai Langka. Dusun I memiliki berbagai fasilitas umum yang menunjang kehidupan sehari-hari warganya.\n\n<b>Dusun II</b>\nDusun II memiliki komunitas yang erat dan aktif dalam berbagai kegiatan sosial dan keagamaan. Meskipun ukurannya lebih kecil, dusun ini dikenal dengan semangat gotong royong warganya.\n\n<b>Dusun III</b>\nDusun III dikenal dengan lingkungan yang asri dan penduduk yang ramah. Dusun ini memiliki potensi besar dalam sektor pertanian, dengan banyak lahan subur yang digunakan untuk bercocok tanam.\n\n<b>Dusun IV</b>\nDusun IV adalah salah satu dusun yang strategis dengan akses yang baik ke berbagai fasilitas desa. Penduduknya sebagian besar bekerja di sektor perdagangan dan jasa.\n\n<b>Dusun V</b>\nDusun V memiliki keseimbangan antara lingkungan perumahan dan lahan pertanian. Warganya terkenal dengan keterampilan dalam kerajinan tangan yang menjadi salah satu sumber pendapatan utama.\n\n<b>Dusun VI</b>\nDusun VI memiliki populasi yang beragam dengan berbagai latar belakang ekonomi. Dusun ini juga memiliki beberapa kelompok tani yang aktif dalam meningkatkan hasil pertanian.\n\n<b>Dusun VII</b>\nDusun VII dikenal dengan kegiatan sosialnya yang aktif dan sering mengadakan acara-acara desa. Dusun ini juga memiliki beberapa fasilitas olahraga yang sering digunakan oleh penduduk.\n\n<b>Dusun VIII</b>\nDusun VIII merupakan salah satu dusun dengan populasi yang cukup besar. Di sini, terdapat beberapa kelompok usaha kecil dan menengah yang berkontribusi pada perekonomian lokal.\n\n<b>Dusun IX</b>\nDusun IX terletak di bagian yang agak terpencil namun memiliki kekayaan alam yang melimpah. Warganya banyak yang bekerja di sektor pertanian dan peternakan.\n\n<b>Dusun X</b>\nDusun X adalah dusun yang terletak di ujung Desa Sungai Langka. Dusun ini memiliki komunitas yang erat dan sering mengadakan kegiatan kebersamaan seperti kerja bakti dan perayaan adat.
 </string>
+
+
+
+
+
+
+    <string name="instagram_url">https://www.instagram.com/pkpm29_sungailangka?igsh=NDE5NWRyNWlnZHN2</string>
+    <string name="tiktok_url">https://www.tiktok.com/@pkpm29_sungailangka?_t=8pA4oO4ErzT&amp;_r=1</string>
+    <string name="web_url">https://s.id/sula2024</string>
 
 </resources>

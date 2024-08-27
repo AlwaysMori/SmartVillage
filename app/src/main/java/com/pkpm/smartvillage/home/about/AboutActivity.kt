@@ -23,10 +23,16 @@ class AboutActivity : AppCompatActivity() {
             val intent = Intent(this, TentangActivity::class.java)
             startActivity(intent)
         }
+        binding.sosmed.setOnClickListener {
+            val intent = Intent(this, SosmedActivity::class.java)
+            startActivity(intent)
+        }
         binding.team.setOnClickListener {
             val intent = Intent(this, TeamActivity::class.java)
             startActivity(intent)
         }
+
+
 
     }
 }

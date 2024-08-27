@@ -57,37 +57,10 @@ class MainActivity : AppCompatActivity() {
         setupPieChart()
         setupViewPager()
         setupClickListeners()
-        setupProfesichart()
     }
 
 
-    private fun setupProfesichart() {
-        profesichart = findViewById(R.id.profesichart)
 
-        val pieEntries = listOf(
-            PieEntry(30f, "Petani"),
-            PieEntry(25f, "Pegawai"),
-            PieEntry(20f, "PNS"),
-            PieEntry(10f, "Lain")
-        )
-
-        val dataSet = PieDataSet(pieEntries, "").apply {
-            colors = listOf(
-                ContextCompat.getColor(this@MainActivity, R.color.green_light),
-                ContextCompat.getColor(this@MainActivity, R.color.blue),
-                ContextCompat.getColor(this@MainActivity, R.color.red),
-                ContextCompat.getColor(this@MainActivity, R.color.yellow),
-            )
-        }
-
-        profesichart.data = PieData(dataSet)
-
-        // Set properties for profesichart
-        profesichart.description.isEnabled = false
-        profesichart.legend.isEnabled = true
-        profesichart.setDrawEntryLabels(false)
-        profesichart.animateY(1000)
-    }
     private fun setupPieChart() {
         pieChart = findViewById(R.id.pieChart)
 

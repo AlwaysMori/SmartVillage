@@ -54,6 +54,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="di Desa Sungai Langka"
@@ -466,87 +467,32 @@
             </androidx.cardview.widget.CardView>
 
             <TextView
-                android:id="@+id/textViewForProfesiChart"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="40dp"
-                android:fontFamily="@font/poppins_light"
-                android:text="Profesi"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/pendudukchart"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.022"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/bannerCardView" />
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/pendudukchart"
-                android:layout_width="match_parent"
-                android:layout_height="190dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginEnd="10dp"
-                android:layout_marginBottom="30dp"
-
-                app:cardCornerRadius="12dp"
-                app:cardElevation="4dp"
-                android:background="@color/blue_light2"
-                app:layout_constraintBottom_toTopOf="@+id/textviewkelamin"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textViewForProfesiChart">
-
-                <com.github.mikephil.charting.charts.PieChart
-                    android:id="@+id/profesichart"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@color/blue_light2"
-                    android:gravity="center"
-                    android:paddingTop="10dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="10dp"
-                    android:text="Data ini berdasarkan pada Juli 2024"
-                    android:textSize="6sp"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_light">
-                </TextView>
-            </androidx.cardview.widget.CardView>
-
-            <TextView
                 android:id="@+id/textviewkelamin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jumlah Penduduk"
                 android:fontFamily="@font/poppins_light"
+                android:text="Jumlah Penduduk"
                 android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toTopOf="@+id/pieChartCardView"
+                app:layout_constraintTop_toBottomOf="@+id/bannerCardView"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.056"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/pendudukchart" />
+                android:layout_marginTop="16dp" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/pieChartCardView"
                 android:layout_width="match_parent"
                 android:layout_height="190dp"
-                android:layout_marginTop="16dp"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
                 android:layout_marginEnd="10dp"
-                app:cardCornerRadius="12dp"
-                android:layout_marginBottom="50dp"
-                app:cardElevation="4dp"
                 android:background="@color/blue_light2"
-                app:layout_constraintBottom_toBottomOf="parent"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="4dp"
+                app:layout_constraintBottom_toBottomOf="@id/textViewCopyright"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textviewkelamin">
@@ -558,23 +504,21 @@
                     android:background="@color/blue_light2"
                     android:gravity="center"
                     android:paddingTop="10dp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
+                    android:fontFamily="@font/poppins_light"
                     android:text="Data ini berdasarkan pada Juli 2024"
-                    android:textSize="6sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/poppins_light">
-                </TextView>
+                    android:textSize="6sp" />
+
             </androidx.cardview.widget.CardView>
-
-
             <TextView
                 android:id="@+id/textViewCopyright"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
                 android:layout_margin="10dp"
                 android:text="© PKPM IIB Darmajaya 2024. All rights reserved."
                 android:textSize="12sp"
@@ -582,7 +526,11 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

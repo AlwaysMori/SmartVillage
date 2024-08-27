@@ -29,7 +29,7 @@ class ChatActivity : AppCompatActivity() {
                         role = "user",
                         text =  """
                             
-                            NAMA ANDA ADALAH 
+                            NAMA AI ANDA ADALAH WISE tujuan utama anda adalah di desa sungailangka adalah memajukan UMKM
                             Pertanyaan dan diskusi harus terkait dengan:
                             1. Program PKPM IIB Darmajaya:
         - Tujuan dan manfaat bagi IIB Darmajaya, mahasiswa, masyarakat, dan pemerintah.
@@ -72,7 +72,7 @@ class ChatActivity : AppCompatActivity() {
     
     Berikut adalah data KWT SungaiLangka 2024 :
 
-- **Dusun I**  
+- Dusun I 
   - Nama: Sukiharti  
   - Tanaman: Timun, Pakcoy, Sawi, Daun Bawang, Seledri, Tomat, Bayam Merah, Bawang Merah  
   - Nama KWT: KWT Dahlia  
@@ -80,7 +80,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6285368116692
 
-- **Dusun II**  
+- Dusun II 
   - Nama: Sri Hartati  
   - Tanaman: Kacang Tanah, Kangkung  
   - Nama KWT: KWT Srikandi  
@@ -88,7 +88,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 62895605899753
 
-- **Dusun III**  
+- Dusun III 
   - Nama: IIS Kinanti  
   - Tanaman: Pakcoi, Sawi, Kangkung, Seledri, Daun Bawang, Cabe Rawit, Kacang Panjang  
   - Nama KWT: KWT Wijaya Kusuma  
@@ -104,7 +104,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6281379797960
 
-- **Dusun V**  
+- Dusun V  
   - Nama: Krismiati  
   - Tanaman: Jahe, Kacang Tanah, Cabe, Terong  
   - Nama KWT: KWT Mitra Abadi  
@@ -112,7 +112,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6281541373076
 
-- **Dusun VI**  
+- Dusun VI  
   - Nama: Tuti Puji Astuti  
   - Tanaman: Sawi, Kangkung  
   - Nama KWT: KWT Mawar Indah  
@@ -120,7 +120,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: KWT Mawar Indah merupakan kelompok ibu tani yang berproduksi sayuran berupa sawi dan kangkung. Disini juga terdapat UMKM yang memproduksi bubuk Cabai, Coklat Susu, dan Rengginang untuk saat ini.  
   - Nomor HP: 62895621754776
 
-- **Dusun VII**  
+- Dusun VII 
   - Nama: Emalia  
   - Tanaman: Rampai, Terong, Kembang Pacar, Seledri, Kembang Kol  
   - Nama KWT: KWT Kemuning  
@@ -128,7 +128,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6285213432765
 
-- **Dusun VII**  
+- Dusun VII  
   - Nama: Okti Wahyuni  
   - Tanaman: Kangkung, Kacang Panjang, Sawi, Cabe  
   - Nama KWT: KWT Makmur Sentosa  
@@ -136,7 +136,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6282142224475
 
-- **Dusun VIII**  
+- Dusun VIII  
   - Nama: Supartiah  
   - Tanaman: Kacang Panjang, Buncis, Kol, Daun Bawang, Kangkung, Tomat, Terong, Pakcoi, Sawi, Kailan, Seledri, Oyong, Kembang Kol, Temu Lawak, Rampai, Kunyit, Jahe, Bayam, Genjer, Labu Siam, Terong Lalap  
   - Nama KWT: KWT Bina Sejahtera  
@@ -144,7 +144,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 6289501003100
 
-- **Dusun IX**  
+- Dusun IX  
   - Nama: Ketua 9  
   - Tanaman: Tanaman 9  
   - Nama KWT: Lokasi 9  
@@ -152,7 +152,7 @@ class ChatActivity : AppCompatActivity() {
   - Keterangan 2: -  
   - Nomor HP: 628123456789
 
-- **Dusun X**  
+- Dusun X  
   - Nama: Asmawati  
   - Tanaman: Terong, Rempai, Sawi  
   - Nama KWT: KWT Mekar Sari  
@@ -164,7 +164,7 @@ class ChatActivity : AppCompatActivity() {
 
 - **Kepala Desa (Kades):**
   - Nama: Erwan Sukijo.SP  
-  - Nomor HP: 628123456789
+  - Nomor HP: 6285279972444
 
 - **Sekretaris Desa (Sekdes):**
   - Nama: Junaedi Abdullah  
@@ -184,34 +184,47 @@ class ChatActivity : AppCompatActivity() {
 - **Kadus:**
   - Nama: Sukarjo  
     - Dusun: I  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6289668914033
   - Nama: Prastio Handoko  
     - Dusun: II  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6289503259665
   - Nama: Alvi Robi Taroreh  
     - Dusun: III  
-    - Nomor HP: 628987654321
-  - Nama: Suwardi  
+    - Nomor HP: 62895428419219
+  - Nama: Intan Oktaviani  
     - Dusun: IV  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6289510633349
   - Nama: Bibit Suyanto  
     - Dusun: V  
     - Nomor HP: 62895355014929
   - Nama: Budi Antriono  
     - Dusun: VI  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6289699118535
   - Nama: Sukardi  
     - Dusun: VII  
     - Nomor HP: 62895640123362
   - Nama: Priyo Sutoto  
     - Dusun: VIII  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6289697802317
   - Nama: Sumariyanto  
     - Dusun: IX  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6285789082691
   - Nama: Marsudi  
     - Dusun: X  
-    - Nomor HP: 628987654321
+    - Nomor HP: 6285768054652
+    
+    
+    
+    Berikut adalah daftar UMKM dalam bentuk paragraf:
+
+    1. **Bubuk Cabai** diproduksi oleh **KWT Mawar Indah** dengan harga Rp. 15.000,00 per botol. 
+    2. **Rengginang** adalah produk dari **Tuti Puji Astuti** yang dijual dengan harga Rp. 35.000,00. 
+    3. Produk lain dari **KWT Mawar Indah** adalah **Coksula**, dengan harga Rp. 15.000,00 per botol. 
+    4. **Warung Kedai Yama** menawarkan berbagai makanan tradisional seperti **Gorengan, Pecel, Karedok, Soto, Ketoprak, dan Geblek** dengan harga mulai dari Rp. 500,00 hingga Rp. 10.000,00. 
+    5. **KWT Srikandi** memproduksi **Minuman Bubuk Jahe**, namun harganya tidak tercantum. 
+    6. **Saminem** menyediakan berbagai **Perlengkapan Tani** dengan harga antara Rp. 5.000,00 hingga Rp. 200.000,00. 
+    7. **Andah Tatrawati** menjual **Craft, Snack, dan Cookies**, namun harga tidak dicantumkan. 
+    8. **UMKM Louisa** menawarkan berbagai camilan seperti **Keripik Pisang karamel wijen, Keripik chojen, dan Brownies Kering** tanpa harga yang tercantum.
     """.trimIndent()
 
                     )
