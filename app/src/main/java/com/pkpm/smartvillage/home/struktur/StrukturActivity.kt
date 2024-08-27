@@ -34,13 +34,13 @@ class StrukturActivity : AppCompatActivity() {
         }
 
         sekdesList.apply {
-            add(Struktur("Junaedi Abdullah", R.drawable.pns, ""))
+            add(Struktur("Junaedi Abdullah", R.drawable.pns, "62895612477567"))
         }
 
         kasiList.apply {
-            add(Struktur("Rois Adi Irawan, S.Pd", R.drawable.pns, "", bagian = "Kasi Pemerintahan"))
-            add(Struktur("Soleman, ST", R.drawable.pns, "", bagian = "Kasi Kesejahteraan"))
-            add(Struktur("Erfangi", R.drawable.pns, "", bagian = "Kasi Pelayanan"))
+            add(Struktur("Rois Adi Irawan, S.Pd", R.drawable.pns, "6285267974999", bagian = "Kasi Pemerintahan"))
+            add(Struktur("Soleman, ST", R.drawable.pns, "628127962818", bagian = "Kasi Kesejahteraan"))
+            add(Struktur("Erfangi", R.drawable.pns, "6289601293303", bagian = "Kasi Pelayanan"))
         }
 
         kadusList.apply {

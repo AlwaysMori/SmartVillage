@@ -24,15 +24,18 @@ class UmkmActivity : AppCompatActivity() {
         binding.recyclerView.layoutManager = LinearLayoutManager(this)
 
         umkmList = listOf(
+            UMKM("Catering Piya", "Piyana Sari", "-", R.drawable.img_7, "https://wa.me/6285333973207"),
             UMKM("Bubuk Cabai", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.cabe, "https://wa.me/62895621754776"),
-            UMKM("Rengginang", "Tuti Puji Astuti", "Rp. 35.000,00", R.drawable.rengginang, "https://wa.me/62895621754776"),
+            UMKM("Rengginang", "Tuti Puji Astuti", "Rp. 35.000,00/Kg", R.drawable.rengginang, "https://wa.me/62895621754776"),
             UMKM("Coksula", "KWT Mawar Indah", "Rp. 15.000,00/botol", R.drawable.coksula, "https://wa.me/62895621754776"),
-            UMKM("Gorengan, Pecel, Karedok, Soto, Ketoprak, Geblek", "Warung Kedai Yama", "Rp. 500,00 - 10.000,00", R.drawable.yama, "https://wa.me/62895385270457"),
+            UMKM("Hidangan Warung", "Warung Kedai Yama", "Rp. 500,00 - 10.000,00", R.drawable.yama, "https://wa.me/62895385270457"),
             UMKM("Minuman Bubuk Jahe", "KWT Srikandi", " - ", R.drawable.umkm21, "https://wa.me/62895605899753"),
             UMKM("Perlengkapan Tani", "Saminem", "Rp. 5.000,00 - 200.000,00", R.drawable.saminem, "https://wa.me/628981732844"),
             UMKM("Craft, Snack, dan Cookies", "Andah Tatrawati", "-", R.drawable.umkm11, "https://wa.me/6288287807524"),
             UMKM("Keripik Pisang karamel wijen, Keripiki chojen, dan Brownies Kering", "UMKM Louisa", "-", R.drawable.img_6, "https://wa.me/6285841806378"),
-        )
+            UMKM("Sagon", "Tuti Puji Astuti", "Rp. 60.000,00/Kg", R.drawable.umkm5, "https://wa.me/62895621754776"),
+
+            )
 
         adapter = UMKMAdapter(umkmList)
         binding.recyclerView.adapter = adapter

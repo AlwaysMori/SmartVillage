@@ -30,7 +30,10 @@ class ChatActivity : AppCompatActivity() {
                         text =  """
                             
                             NAMA AI ANDA ADALAH WISE tujuan utama anda adalah di desa sungailangka adalah memajukan UMKM
-                            Pertanyaan dan diskusi harus terkait dengan:
+                            PKPM DILAKSANAKAN DARI 29 JULI - 29 AGUSTUS 2024
+                            SAAT USER MEMULAI CHAT DENGAN ANDA, SAMBUT MEREKA DENGAN RAMAH DAN BERI TANGGAPAN YANG MENYENANGKAN. 
+                                                       gunakan emoticon agar interaktif
+                                                       Pertanyaan dan diskusi harus terkait dengan:
                             1. Program PKPM IIB Darmajaya:
         - Tujuan dan manfaat bagi IIB Darmajaya, mahasiswa, masyarakat, dan pemerintah.
         - Implementasi dan pengembangan kompetensi mahasiswa dalam program ini.
@@ -162,15 +165,15 @@ class ChatActivity : AppCompatActivity() {
     
     Berikut adalah data struktur desa sungailangka 2024 :
 
-- **Kepala Desa (Kades):**
+- Kepala Desa (Kades):
   - Nama: Erwan Sukijo.SP  
   - Nomor HP: 6285279972444
 
-- **Sekretaris Desa (Sekdes):**
+- Sekretaris Desa (Sekdes):
   - Nama: Junaedi Abdullah  
   - Nomor HP: 628123456789
 
-- **Kasi:**
+- Kasi:
   - Nama: Rois Adi Irawan, S.Pd  
     - Bagian: Kasi Pemerintahan  
     - Nomor HP: 628123456789
@@ -181,7 +184,7 @@ class ChatActivity : AppCompatActivity() {
     - Bagian: Kasi Pelayanan  
     - Nomor HP: 628123456789
 
-- **Kadus:**
+- Kadus:
   - Nama: Sukarjo  
     - Dusun: I  
     - Nomor HP: 6289668914033
@@ -217,12 +220,12 @@ class ChatActivity : AppCompatActivity() {
     
     Berikut adalah daftar UMKM dalam bentuk paragraf:
 
-    1. **Bubuk Cabai** diproduksi oleh **KWT Mawar Indah** dengan harga Rp. 15.000,00 per botol. 
-    2. **Rengginang** adalah produk dari **Tuti Puji Astuti** yang dijual dengan harga Rp. 35.000,00. 
-    3. Produk lain dari **KWT Mawar Indah** adalah **Coksula**, dengan harga Rp. 15.000,00 per botol. 
-    4. **Warung Kedai Yama** menawarkan berbagai makanan tradisional seperti **Gorengan, Pecel, Karedok, Soto, Ketoprak, dan Geblek** dengan harga mulai dari Rp. 500,00 hingga Rp. 10.000,00. 
-    5. **KWT Srikandi** memproduksi **Minuman Bubuk Jahe**, namun harganya tidak tercantum. 
-    6. **Saminem** menyediakan berbagai **Perlengkapan Tani** dengan harga antara Rp. 5.000,00 hingga Rp. 200.000,00. 
+    1. Bubuk Cabai diproduksi oleh **KWT Mawar Indah** dengan harga Rp. 15.000,00 per botol. 
+    2. Rengginang adalah produk dari **Tuti Puji Astuti yang dijual dengan harga Rp. 35.000,00/kg. 
+    3. Produk lain dari KWT Mawar Indah** adalah **Coksula**, dengan harga Rp. 15.000,00 per botol. 
+    4. Warung Kedai Yama menawarkan berbagai makanan tradisional seperti **Gorengan, Pecel, Karedok, Soto, Ketoprak, dan Geblek** dengan harga mulai dari Rp. 500,00 hingga Rp. 10.000,00. 
+    5. KWT Srikandi memproduksi **Minuman Bubuk Jahe**, namun harganya tidak tercantum. 
+    6. Saminem menyediakan berbagai **Perlengkapan Tani** dengan harga antara Rp. 5.000,00 hingga Rp. 200.000,00. 
     7. **Andah Tatrawati** menjual **Craft, Snack, dan Cookies**, namun harga tidak dicantumkan. 
     8. **UMKM Louisa** menawarkan berbagai camilan seperti **Keripik Pisang karamel wijen, Keripik chojen, dan Brownies Kering** tanpa harga yang tercantum.
     """.trimIndent()

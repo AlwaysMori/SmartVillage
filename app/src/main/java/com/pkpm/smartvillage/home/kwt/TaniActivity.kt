@@ -117,13 +117,13 @@ class TaniActivity : AppCompatActivity() {
             ),
             KWTItem(
                 "Dusun IX",
-                R.drawable.kwt,
-                "Ketua 9",
-                "Tanaman 9",
-                "Lokasi 9",
+                R.drawable.kwt9,
+                "Martanti",
+                "Sawi, Kangkung, Dll",
+                "KWT Jaya Bakti",
                 " - ",
                 " - ",
-                ""
+                "6285841806378"
             ),
             KWTItem(
                 "Dusun X",
